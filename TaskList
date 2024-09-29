@@ -1,0 +1,6 @@
+'''
+Create Django init file.
+Deploy in nginx
+create service that builds and maintains running SQL Database of securities
+Build Front end Disply of Securities and basic front end interface
+'''
