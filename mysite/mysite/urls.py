@@ -25,7 +25,6 @@ def sig():
     print("Signal 1 that there is output");
     
 sig();
-signal2();
 views.signal2();
 urlpatterns = [
     #path("polls/", include("polls.urls")),
