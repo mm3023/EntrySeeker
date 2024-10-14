@@ -9,7 +9,7 @@ def my_view(request):
 """    
 def index(request):
     print('---- Index triggered ------ ');
-    return HttpResponse("Hello, world. You're at the polls index.")
+    return HttpResponse("Hello, world. You're at the polls index.");
 
 
 
