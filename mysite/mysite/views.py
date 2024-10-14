@@ -7,7 +7,7 @@ def signal2():
 def my_view(request):
     return render(request, 'my_template.html', {'message': 'Hello from my view!'})
 """    
-def index(request):
+def index():
     print('---- Index triggered ------ ');
     return HttpResponse("Hello, world. You're at the polls index.");
 
