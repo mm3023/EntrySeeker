@@ -17,13 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from polls.urls import *
-#from . import views
+from . import views
 #import views
 
 
 def sig():
     print("Signal 1 that there is output");
-sig();    
+    
+sig();
+signal2();
+views.signal2();
 urlpatterns = [
     #path("polls/", include("polls.urls")),
     path('admin/', admin.site.urls),
