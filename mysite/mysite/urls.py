@@ -18,8 +18,12 @@ from django.contrib import admin
 from django.urls import path, include
 from polls.urls import *
 from . import views
-import views
+#import views
 
+
+def sig():
+    print("Signal 1 that there is output");
+sig();    
 urlpatterns = [
     #path("polls/", include("polls.urls")),
     path('admin/', admin.site.urls),
