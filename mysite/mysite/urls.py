@@ -14,6 +14,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+"""
 from django.contrib import admin
 from django.urls import path, include
 from polls.urls import *
@@ -33,6 +34,21 @@ urlpatterns = [
     path('polls/', views.my_view),
     path('polls/', views.index),
 ]
+"""
+def sig():
+    print("Signal 1 that there is output");
+    
+sig();
+views.signal2();
 
+from django.contrib import admin
+from django.urls import path, include
+from polls.urls import *  # Import all URL patterns from polls.urls
 
+from . import views  # Import views from the current app
 
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('polls/', views.my_view, name='my-view'),
+    # path('polls/', views.index),  # Uncomment if you prefer the default view
+]
