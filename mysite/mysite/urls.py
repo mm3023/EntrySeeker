@@ -35,17 +35,19 @@ urlpatterns = [
     path('polls/', views.index),
 ]
 """
-def sig():
-    print("Signal 1 that there is output");
-    
-sig();
-views.signal2();
 
 from django.contrib import admin
 from django.urls import path, include
 from polls.urls import *  # Import all URL patterns from polls.urls
 
 from . import views  # Import views from the current app
+def sig():
+    print("Signal 1 that there is output");
+    
+sig();
+views.signal2();
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
