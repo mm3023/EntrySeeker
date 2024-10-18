@@ -18,6 +18,10 @@ def index(request):
     print('---- Index triggered ------ ');
     return HttpResponse("Hello, world. You're at the polls index.");
 
+def entry(request):
+    #print('---- Main triggered ------ ');
+    return HttpResponse("You're at the main-entry.");
+
 
 
 
