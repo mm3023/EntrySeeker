@@ -51,7 +51,8 @@ views.signal2();
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('polls/', views.my_view),
+    #path('polls/', views.my_view),
+    path("polls/", include("polls.urls")),
     path('', views.entry),
     #path('polls/', views.index),  # Uncomment if you prefer the default view
 ]
