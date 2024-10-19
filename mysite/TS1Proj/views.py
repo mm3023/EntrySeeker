@@ -22,7 +22,10 @@ def entry(request):
     return HttpResponse("You're at the main-entry.");
 """
     
-
+"""
 def index(request):
     print('---- Index triggered ------ ');
     return HttpResponse("Hello, world. You're at the TS1 index.");
+"""
+def index(request):
+    return render(request, {'message': 'Hello from my TS1Proj!'});
