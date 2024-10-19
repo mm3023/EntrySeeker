@@ -29,4 +29,4 @@ def index(request):
     return HttpResponse("Hello, world. You're at the TS1 index.");
 """
 def index(request):
-    return render(request,'Template.html',{'message': 'Hello from my TS1Proj!'});
+    return render(request,'template.html',{'message': 'Hello from my TS1Proj!'});
