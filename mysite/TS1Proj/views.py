@@ -28,6 +28,11 @@ def index(request):
     print('---- Index triggered ------ ');
     return HttpResponse("Hello, world. You're at the TS1 index.");
 """
+"""
 def index(request):
     title={'title':'VerbalOctopus'};
     return render(request,'template.html',title,{'message': 'Hello from my TS1Proj!'});
+"""
+def index(request):
+        context={'message': 'Hello from my TS1Proj!','title':'VerbalOctopus'}
+        return render(request,'template.html',context);
