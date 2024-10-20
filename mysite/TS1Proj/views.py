@@ -34,5 +34,5 @@ def index(request):
     return render(request,'template.html',title,{'message': 'Hello from my TS1Proj!'});
 """
 def index(request):
-        context={'message': 'Hello from my TS1Proj!','title':'VerbalOctopus'}
+        context={'message': 'Hello from my TS1Proj!','title':'Verbal Octopus'}
         return render(request,'template.html',context);
