@@ -47,6 +47,13 @@ def sig():
 sig();
 views.signal2();
 
+import logging
+
+logger = logging.getLogger(__name__)
+
+def my_view(request):
+    logger.info(request.META)
+    # ... rest of your view logic
 
 
 urlpatterns = [
