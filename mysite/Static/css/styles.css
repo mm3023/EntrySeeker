@@ -1,6 +1,12 @@
 .Branding_1{
-  
+            font-style: italic;
+            font-size: 24px;
+            margin: 10px;
+            padding: 2px;
+            color: black;     
 }
+
+
 
 .Branding_2{
   
