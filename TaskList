@@ -1,7 +1,15 @@
 3 subunits
-- Gig
+- Gig Aggregator
+  Gig APIs 
+  SQL
 - Marketing
+  social media account launcher
+  Lander Launcher
+  Buissness Card site Launcher
+  SQL
 - Investment
+  Commodities Data Acumulator APIs
+  SQL
 '''
 Create Django init file.
 Deploy in nginx
