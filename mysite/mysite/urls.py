@@ -52,7 +52,8 @@ import logging
 logger = logging.getLogger(__name__)
 
 def my_view(request):
-    logger.info(request.META)
+    informate=logger.info(request.META);
+    print( informate);
     # ... rest of your view logic
 
 
