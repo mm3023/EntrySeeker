@@ -30,4 +30,4 @@ def index(request):
 """
 def index(request):
     title='VerbalOctopus';
-    return render(request,'template.html',title,{'message': 'Hello from my TS1Proj!'});
+    return render(request,'template.html',title:title,{'message': 'Hello from my TS1Proj!'});
