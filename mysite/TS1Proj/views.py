@@ -29,5 +29,5 @@ def index(request):
     return HttpResponse("Hello, world. You're at the TS1 index.");
 """
 def index(request):
-    title='VerbalOctopus';
-    return render(request,'template.html',title:title,{'message': 'Hello from my TS1Proj!'});
+    title={title:'VerbalOctopus'};
+    return render(request,'template.html',title,{'message': 'Hello from my TS1Proj!'});
