@@ -62,6 +62,6 @@ urlpatterns = [
     #path('polls/', views.my_view),
     path("polls/", include("polls.urls")),
     path('', views.entry),
-    path('TS1/', include("TS1Proj.urls")),
+    path('ts/', include("TS1Proj.urls")),
     #path('polls/', views.index),  # Uncomment if you prefer the default view
 ]
