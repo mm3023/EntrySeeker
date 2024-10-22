@@ -12,6 +12,7 @@ response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?langua
 print('request sent');
 print('response');
 print(response);
+print(response.text);
 
 
 
