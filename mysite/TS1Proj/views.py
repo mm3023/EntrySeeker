@@ -18,6 +18,8 @@ print(response.json()[1]);
 
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
+response = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US');
+print(response.json()[1]);
 
 
 
