@@ -12,7 +12,12 @@ response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?langua
 print('request sent');
 print('response');
 print(response);
-print(response.json());
+print(response.json()[1]);
+
+
+
+#nager api alter year/country code;
+https://date.nager.at/api/v3/PublicHolidays/2024/US
 
 
 
