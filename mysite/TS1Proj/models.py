@@ -16,53 +16,17 @@ def JsonRequestResolver1(x):
 
 open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');   
 print(open_holiday_set)    
-"""
-#response = requests.get('https://api.github.com/user', auth=('user', 'pass'))
-#https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25
-response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
-res1=response.json();
-print("type res1");
-print(type(res1));
-print("------");
-print(res1[0]);
-print(res1[1]);
 
 
-resFrame=pandas.DataFrame(res1);
-resFrame=[item.split(",") for item in resFrame];
-print(resFrame);
-
-"""
-#df = pandas.DataFrame([sub.split(",") for sub in l])
-#newRes=pandas.read_csv(res1);
-#print(newRes);
-"""
-print(res1"[0][0]");
-print(res1[0][0]);
-print("res1[0][1])";
-print(res1[0][1]);
-"""      
-#res1=json.loads(res1);
-
-#response1=open(response);
-#response1=json.load(response1);
-
-
-#print(response1);
-"""
-
-#print(response1)[1];
-#pandas.read_json(response1);
-
-#response_1=pandas.read_json(response1);
-#print(response_1);
-"""
 
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 """
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
+date_nager_at=JsonRequestResolver1(https://date.nager.at/api/v3/PublicHolidays/2024/US);
+print(date_nager_at);
+"""
 response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US')
 res2=response2.json();
 res2=json.loads(res2);
