@@ -8,6 +8,9 @@ def zeist_initiate():
 zeist_initiate();
 
 def JsonRequestResolver1(x):
+        test_for_string=type(x);
+        print(type(x));
+    
         #x is the URL appropriately structured;
         response=requests.get(x).json();
         resFrame=pandas.DataFrame(response);
@@ -25,7 +28,7 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
 """
-date_nager_at=JsonRequestResolver1(https://date.nager.at/api/v3/PublicHolidays/2024/US);
+date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
 
 print(date_nager_at);
 """
