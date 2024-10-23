@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from * import models
+from . import models
 """
 def zeist_initiate():
     print("zeist is online");
