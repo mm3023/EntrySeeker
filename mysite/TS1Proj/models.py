@@ -11,7 +11,8 @@ def JsonRequestResolver1(x):
         #x is the URL appropriately structured;
         response=requests.get(x).json();
         resFrame=pandas.DataFrame(res1);
-        return resFrame[item.split(",") for item in resFrame];
+        reFrame=[item.split(",") for item in resFrame];
+        #return reFrame=[item.split(",") for item in resFrame];
 open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');   
     
 """
