@@ -41,11 +41,12 @@ def open_holiday_DataFrame():
 def date_nager_at():
      dateString=str(datetime.now())[0:4];
      print(dateString);
-     #Original URL from docs https://date.nager.at/api/v3/PublicHolidays/2024/US;
-     URL='https://date.nager.at/api/v3/PublicHolidays/+dateString+/US';
+     #Original URL from docs 'https://date.nager.at/api/v3/PublicHolidays/2024/US'
+     URL='https://date.nager.at/api/v3/PublicHolidays/+dateString+/US'
      print('URL');
      print(URL);
      #return JsonRequestResolver1(URL);
+     
     
 open_holiday_DataFrame();
      
