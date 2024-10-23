@@ -9,7 +9,7 @@ from datetime import datetime
 def zeist_initiate():
     print("zeist is online");
     return 0;
-zeist_initiate();
+#zeist_initiate();
 
 def JsonRequestResolver1(x):
         #test_for_string=type(x);
