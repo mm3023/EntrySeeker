@@ -24,6 +24,7 @@ print(response1)[1];
 
 #response_1=pandas.read_json(response1);
 #print(response_1);
+"""
 
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
@@ -34,7 +35,7 @@ response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US').
 response_2=pandas.read_json(response2[1]);
 response_2=pandas.read_json(response2);
 print(response_2);
-"""
+
 
 
 
