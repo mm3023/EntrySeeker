@@ -33,7 +33,7 @@ def JsonRequestResolver1(x):
 
 #now=datetime.now();
 
-open_holiday_DataFrame:
+def open_holiday_DataFrame:
     nowdatetime.now();
     print(now);
 open_holiday_DataFrame;
@@ -46,10 +46,10 @@ print(open_holiday_set)
 
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
-"""
+
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
-"""
+
 date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
 
 print(date_nager_at);
