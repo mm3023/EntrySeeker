@@ -37,7 +37,9 @@ def open_holiday_DataFrame():
     dateString=datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print('type(dateString)');
     print(type(dateString));
+    print('dateString[10]');
     print(dateString[10]);
+    print('dateString');
     print(dateString);
     print('open_holiday_DataFrame;-end');
 open_holiday_DataFrame();
