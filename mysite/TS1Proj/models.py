@@ -19,7 +19,7 @@ def JsonRequestResolver1(x):
         #x is the URL appropriately structured;
         response=requests.get(x).json();
         resFrame=pandas.DataFrame(response);
-        print(resFrame[0]); 
+        #print(resFrame[0]); 
         print(resFrame); 
         reFrame=[item.split(",") for item in resFrame];
         
