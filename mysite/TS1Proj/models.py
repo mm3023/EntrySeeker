@@ -9,7 +9,7 @@ zeist_initiate();
 
 def JsonRequestResolver1(x):
         test_for_string=type(x);
-        if type(x)=<class 'str'>:
+        if type(x)=="<class 'str'>":
             print("string confirmed");
         else:
             print('string expected');
