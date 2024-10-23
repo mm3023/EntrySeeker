@@ -36,7 +36,7 @@ def open_holiday_DataFrame():
     #original URL from documentation openholidaysapi 'https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25';
     print('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25')
     URL='https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date='+datetime.now();
-    print('URL)';
+    print('URL');
     print(URL);
     
     dateString=str(datetime.now());
