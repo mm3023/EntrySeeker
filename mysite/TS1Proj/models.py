@@ -27,7 +27,7 @@ def JsonRequestResolver1(x):
 
 
 #now=datetime.now();
-print(datetime.now());
+#print(datetime.now());
 
 def open_holiday_DataFrame():
     print('datetime.now()');
@@ -37,7 +37,7 @@ def open_holiday_DataFrame():
     print('now');
     print(now);
     print('open_holiday_DataFrame;-end')
-open_holiday_DataFrame;
+open_holiday_DataFrame();
      
 
 open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');   
@@ -55,8 +55,8 @@ date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/
 
 print(date_nager_at);
 print('-------------------------------------------')
-open_holiday_DataFrame;
-open_holiday_DataFrame;
+open_holiday_DataFrame();
+open_holiday_DataFrame();
 
 
 
