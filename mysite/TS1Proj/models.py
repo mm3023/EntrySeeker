@@ -40,8 +40,8 @@ def open_holiday_DataFrame():
     print(dateString);
     print('type(dateString)');
     print(type(dateString));
-    print('dateString[0:9]');
-    print(dateString[0:9]);
+    print('dateString[0:10]');
+    print(dateString[0:10);
     print('dateString');
     print(dateString);
     print('open_holiday_DataFrame;-end');
