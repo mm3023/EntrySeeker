@@ -17,7 +17,9 @@ print("------");
 print(res1[0]);
 print(res1[1]);
 
-resFrame=[item.split(",") for item in res1];
+
+resFrame=pandas.DataFrame(res1);
+resFrame=[item.split(",") for item in resFrame];
 
 
 #df = pandas.DataFrame([sub.split(",") for sub in l])
