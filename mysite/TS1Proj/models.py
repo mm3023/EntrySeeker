@@ -53,7 +53,7 @@ def nagerAPI():
      return JsonRequestResolver1(URL);
      
     
-open_holiday_DataFrame();
+#open_holiday_DataFrame();
      
 
 #open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
