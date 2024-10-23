@@ -45,13 +45,13 @@ def nagerAPI():
      
      print(dateString);
      print(type(dateString));
-     """
+     
      #Original URL from docs 'https://date.nager.at/api/v3/PublicHolidays/2024/US'
      URL='https://date.nager.at/api/v3/PublicHolidays/+dateString+/US'
      print('URL');
      print(URL);
      #return JsonRequestResolver1(URL);
-     """
+     
     
 open_holiday_DataFrame();
      
