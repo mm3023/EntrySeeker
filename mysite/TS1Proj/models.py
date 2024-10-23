@@ -50,7 +50,7 @@ def nagerAPI():
      URL='https://date.nager.at/api/v3/PublicHolidays/+dateString+/US'
      print('URL');
      print(URL);
-     #return JsonRequestResolver1(URL);
+     return JsonRequestResolver1(URL);
      
     
 open_holiday_DataFrame();
