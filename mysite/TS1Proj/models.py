@@ -26,8 +26,6 @@ def JsonRequestResolver1(x):
 
 
 
-#now=datetime.now();
-#print(datetime.now());
 
 def open_holiday_DataFrame():
     dateString=str(datetime.now())[0:10];
@@ -37,30 +35,36 @@ def open_holiday_DataFrame():
     print('URL');
     print(URL);
     return JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
+
+
+
+def date_nager_at():
+     dateString=str(datetime.now())[0:4];
+     print(dateString);
+     #Original URL from docs https://date.nager.at/api/v3/PublicHolidays/2024/US;
+     URL=https://date.nager.at/api/v3/PublicHolidays/+dateString+/US;
+     print('URL');
+     print(URL);
+     #return JsonRequestResolver1(URL);
     
 open_holiday_DataFrame();
      
 
-open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
-print('new');
-print(open_holiday_DataFrame());
-print('old')
-print(open_holiday_set);    
+#open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
 
 
 
-print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
-print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+
+#print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
+#print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
+open_holiday_DataFrame();
 
 date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
+date_nager_at();
 
-print(date_nager_at);
-print('-------------------------------------------')
-open_holiday_DataFrame();
-open_holiday_DataFrame();
 
 
 
