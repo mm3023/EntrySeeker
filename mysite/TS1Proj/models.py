@@ -10,6 +10,7 @@ zeist_initiate();
 def JsonRequestResolver1(x):
         test_for_string=type(x);
         print(type(x));
+        print(type(test_for_string));
     
         #x is the URL appropriately structured;
         response=requests.get(x).json();
