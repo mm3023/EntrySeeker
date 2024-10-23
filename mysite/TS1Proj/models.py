@@ -64,7 +64,7 @@ open_holiday_DataFrame();
 open_holiday_DataFrame();
 
 date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
-date_nager_at();
+#date_nager_at();
 
 
 
