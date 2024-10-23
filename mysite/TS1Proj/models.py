@@ -26,7 +26,7 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
 date_nager_at=JsonRequestResolver1(https://date.nager.at/api/v3/PublicHolidays/2024/US);
 print(date_nager_at);
-"""
+
 response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US')
 res2=response2.json();
 res2=json.loads(res2);
