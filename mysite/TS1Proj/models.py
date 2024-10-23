@@ -7,6 +7,14 @@ def zeist_initiate():
     return 0;
 zeist_initiate();
 
+def JsonRequestResolver1(x):
+        #x is the URL appropriately structured;
+        response=requests.get(x).json();
+        resFrame=pandas.DataFrame(res1);
+        return resFrame=[item.split(",") for item in resFrame];
+open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');   
+    
+"""
 #response = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 #https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25
 response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
@@ -22,7 +30,7 @@ resFrame=pandas.DataFrame(res1);
 resFrame=[item.split(",") for item in resFrame];
 print(resFrame);
 
-
+"""
 #df = pandas.DataFrame([sub.split(",") for sub in l])
 #newRes=pandas.read_csv(res1);
 #print(newRes);
