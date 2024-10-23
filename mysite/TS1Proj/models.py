@@ -12,16 +12,15 @@ def JsonRequestResolver1(x):
         if type(x)==type('x'):
             print("string confirmed");
         else:
-            print('string expected');
+            print('string expected')
+            return'string expected';
         print(type(x));
         print(type(test_for_string));
     
         #x is the URL appropriately structured;
         response=requests.get(x).json();
         resFrame=pandas.DataFrame(response);
-        #print(resFrame[0]); 
-        print(resFrame); 
-        reFrame=[item.split(",") for item in resFrame];
+        #reFrame=[item.split(",") for item in resFrame];
         
         return reFrame;
 
