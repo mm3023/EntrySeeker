@@ -39,12 +39,12 @@ def open_holiday_DataFrame():
 
 
 def nagerAPI():
-     """
-     dateString=str(datetime.now())[0:4];
-     """
      
-     #print(dateString);
-     #print(type(dateString));
+     dateString=str(datetime.now())[0:4];
+     
+     
+     print(dateString);
+     print(type(dateString));
      """
      #Original URL from docs 'https://date.nager.at/api/v3/PublicHolidays/2024/US'
      URL='https://date.nager.at/api/v3/PublicHolidays/+dateString+/US'
