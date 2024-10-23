@@ -49,6 +49,8 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
 
 print(date_nager_at);
+print('-------------------------------------------')
+open_holiday_DataFrame;
 open_holiday_DataFrame;
 
 
