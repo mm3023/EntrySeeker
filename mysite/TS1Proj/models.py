@@ -1,6 +1,10 @@
 import requests;
 import json
 import pandas
+from datetime import datetime
+
+
+
 
 def zeist_initiate():
     print("zeist is online");
@@ -24,6 +28,17 @@ def JsonRequestResolver1(x):
         
         return reFrame;
 
+
+
+
+#now=datetime.now();
+
+open_holiday_DataFrame:
+    nowdatetime.now();
+    print(now);
+open_holiday_DataFrame;
+     
+
 open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');   
 print(open_holiday_set)    
 
@@ -38,14 +53,7 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
 
 print(date_nager_at);
-"""
-response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US')
-res2=response2.json();
-res2=json.loads(res2);
-#response_2=pandas.read_json(response2[1]);
-#response_2=pandas.read_json(response2);
-print('');
-"""
+open_holiday_DataFrame;
 
 
 
