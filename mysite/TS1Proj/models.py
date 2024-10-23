@@ -12,21 +12,17 @@ def zeist_initiate():
 zeist_initiate();
 
 def JsonRequestResolver1(x):
-        test_for_string=type(x);
+        #test_for_string=type(x);
         if type(x)==type('x'):
             print("string confirmed");
         else:
             print('string expected')
             return'string expected';
-        print(type(x));
-        print(type(test_for_string));
-    
         #x is the URL appropriately structured;
         response=requests.get(x).json();
         resFrame=pandas.DataFrame(response);
         #reFrame=[item.split(",") for item in resFrame];
-        
-        return reFrame;
+        return resFrame;
 
 
 
