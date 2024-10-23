@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
+"""
 def zeist_initiate():
     print("zeist is online");
     return 0;
@@ -22,7 +22,7 @@ response = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US');
 print(response.json()[1]);
 
 
-
+"""
 
 
 
