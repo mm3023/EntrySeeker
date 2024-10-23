@@ -16,6 +16,9 @@ print(type(res1));
 print("------");
 print(res1[0]);
 print(res1[1]);
+
+newRes=pandas.read()res1;
+print(newRes);
 """
 print(res1"[0][0]");
 print(res1[0][0]);
