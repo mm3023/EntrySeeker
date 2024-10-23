@@ -33,7 +33,7 @@ def JsonRequestResolver1(x):
 
 #now=datetime.now();
 
-def open_holiday_DataFrame:
+def open_holiday_DataFrame():
     nowdatetime.now();
     print(now);
 open_holiday_DataFrame;
