@@ -10,7 +10,7 @@ zeist_initiate();
 #response = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 #https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25
 response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
-res1=response.json()
+res1=response
 print('');
 res1=json.loads(res1);
 
