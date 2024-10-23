@@ -30,19 +30,13 @@ def JsonRequestResolver1(x):
 #print(datetime.now());
 
 def open_holiday_DataFrame():
-    print('open_holiday_DataFrame;-called');
-    print(type(datetime.now()));
-    #print('datetime.now()');
-    print(datetime.now());
-    #dateString=datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     dateString=str(datetime.now());
-    print("---")
-    print(dateString);
-    print('type(dateString)');
-    print(type(dateString));
-    print('dateString[0:10]');
-    print(dateString[0:10);
-    print('dateString');
+    #original URL from documentation openholidaysapi 'https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25'
+    URL='https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date='+datetime.now();
+    print('URL)';
+    print(URL);
+    print('open_holiday_DataFrame;-called');
+    dateString=str(datetime.now());
     print(dateString);
     print('open_holiday_DataFrame;-end');
 open_holiday_DataFrame();
