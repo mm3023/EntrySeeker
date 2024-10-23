@@ -17,7 +17,7 @@ print("------");
 print(res1[0]);
 print(res1[1]);
 
-newRes=pandas.read()res1;
+newRes=pandas.read.csv(res1);
 print(newRes);
 """
 print(res1"[0][0]");
