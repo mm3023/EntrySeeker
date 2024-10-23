@@ -10,9 +10,10 @@ zeist_initiate();
 #response = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 #https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25
 response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
-res1=response
-print('');
-res1=json.loads(res1);
+res1=response.json()
+print(res1[0]);
+print(res1[1]);
+#res1=json.loads(res1);
 
 #response1=open(response);
 #response1=json.load(response1);
@@ -30,7 +31,7 @@ res1=json.loads(res1);
 
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
 print("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::");
-
+"""
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
 response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US')
@@ -39,7 +40,7 @@ res2=json.loads(res2);
 #response_2=pandas.read_json(response2[1]);
 #response_2=pandas.read_json(response2);
 print('');
-
+"""
 
 
 
