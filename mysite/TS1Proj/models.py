@@ -24,8 +24,9 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 """
 #nager api alter year/country code;
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
-date_nager_at=JsonRequestResolver1(https://date.nager.at/api/v3/PublicHolidays/2024/US);
 """
+date_nager_at=JsonRequestResolver1(https://date.nager.at/api/v3/PublicHolidays/2024/US);
+
 print(date_nager_at);
 """
 response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US')
