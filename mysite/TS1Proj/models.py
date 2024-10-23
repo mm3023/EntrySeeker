@@ -30,15 +30,16 @@ def JsonRequestResolver1(x):
 #print(datetime.now());
 
 def open_holiday_DataFrame():
-    print('open_holiday_DataFrame;-called')
-    print(type(datetime.now()))
+    print('open_holiday_DataFrame;-called');
+    print(type(datetime.now()));
     #print('datetime.now()');
-    print(datetime.now())
+    print(datetime.now());
+    datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     
     #now=datetime.now();
     #print('now');
     #print(now);
-    print('open_holiday_DataFrame;-end')
+    print('open_holiday_DataFrame;-end');
 open_holiday_DataFrame();
      
 
