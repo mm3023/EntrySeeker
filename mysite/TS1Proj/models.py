@@ -14,11 +14,12 @@ res1=response.json();
 print(res1.keys());
 print(res1[0]);
 print(res1[1]);
+"""
 print(res1"[0][0]");
 print(res1[0][0]);
 print("res1[0][1])";
 print(res1[0][1]);
-      
+"""      
 #res1=json.loads(res1);
 
 #response1=open(response);
