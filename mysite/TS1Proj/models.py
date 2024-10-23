@@ -11,7 +11,7 @@ zeist_initiate();
 #https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25
 response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
 res1=response.json();
-print()res1.keys();
+print(res1.keys());
 print(res1[0]);
 print(res1[1]);
 print(res1"[0][0]");
