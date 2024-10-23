@@ -10,7 +10,7 @@ zeist_initiate();
 #response = requests.get('https://api.github.com/user', auth=('user', 'pass'))
 #https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25
 response = requests.get('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
-print(response);
+print(response.json());
 #json.load(response);
 
 #response1=open(response);
@@ -35,7 +35,7 @@ print(":::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 response2 = requests.get('https://date.nager.at/api/v3/PublicHolidays/2024/US')
 #response_2=pandas.read_json(response2[1]);
 #response_2=pandas.read_json(response2);
-print(response2);
+print(response2.json());
 
 
 
