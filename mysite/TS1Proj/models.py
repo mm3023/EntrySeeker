@@ -20,6 +20,7 @@ print(res1[1]);
 
 resFrame=pandas.DataFrame(res1);
 resFrame=[item.split(",") for item in resFrame];
+print=(resFrame);
 
 
 #df = pandas.DataFrame([sub.split(",") for sub in l])
