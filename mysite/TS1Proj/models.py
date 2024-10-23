@@ -17,8 +17,12 @@ print("------");
 print(res1[0]);
 print(res1[1]);
 
-newRes=pandas.read_csv(res1);
-print(newRes);
+resFrame=[item.split(",") for item in res1];
+
+
+#df = pandas.DataFrame([sub.split(",") for sub in l])
+#newRes=pandas.read_csv(res1);
+#print(newRes);
 """
 print(res1"[0][0]");
 print(res1[0][0]);
