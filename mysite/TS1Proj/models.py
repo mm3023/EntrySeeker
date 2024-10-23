@@ -38,7 +38,7 @@ def open_holiday_DataFrame():
 
 
 
-def date_nager_at():
+def nagerAPI():
      """
      dateString=str(datetime.now())[0:4];
      """
@@ -69,7 +69,7 @@ open_holiday_DataFrame();
 open_holiday_DataFrame();
 
 date_nager_at=JsonRequestResolver1('https://date.nager.at/api/v3/PublicHolidays/2024/US');
-date_nager_at();
+nagerAPI();
 
 
 
