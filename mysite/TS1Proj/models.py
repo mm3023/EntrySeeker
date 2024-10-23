@@ -38,10 +38,7 @@ def open_holiday_DataFrame():
     print('type(dateString)');
     print(type(dateString));
     print(dateString[10]);
-    
-    #now=datetime.now();
-    #print('now');
-    #print(now);
+    print(dateString);
     print('open_holiday_DataFrame;-end');
 open_holiday_DataFrame();
      
