@@ -9,7 +9,7 @@ zeist_initiate();
 
 def JsonRequestResolver1(x):
         test_for_string=type(x);
-        if type(x)=="<class 'str'>":
+        if type(x)==type('x'):
             print("string confirmed");
         else:
             print('string expected');
@@ -19,7 +19,10 @@ def JsonRequestResolver1(x):
         #x is the URL appropriately structured;
         response=requests.get(x).json();
         resFrame=pandas.DataFrame(response);
+        print(resFrame[0]); 
+        print(resFrame); 
         reFrame=[item.split(",") for item in resFrame];
+        
         return reFrame;
 
 open_holiday_set=JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');   
