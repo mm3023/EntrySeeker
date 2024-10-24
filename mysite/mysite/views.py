@@ -22,6 +22,7 @@ def entry(request):
 def upload(request):
     print(request);
     print(request.method);
+    print(request.files);
     return HttpResponse("success");
 
 
