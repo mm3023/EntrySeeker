@@ -35,5 +35,5 @@ urlpatterns = [
     #path("polls/", include("polls.urls")),
     path('', views.entry),
     path('ts/', include("TS1Proj.urls")),
-    #path('polls/', views.index),  # Uncomment if you prefer the default view
+    path('upload/', views.upload), 
 ]
