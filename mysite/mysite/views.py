@@ -19,7 +19,10 @@ def index(request):
 def entry(request):
     #print('---- Main triggered ------ ');
     return HttpResponse("main reporting zeist++");
-
+def upload(request):
+    print(request);
+    print(request.method);
+    return HttpResponse("success");
 
 
 
