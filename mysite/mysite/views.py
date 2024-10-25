@@ -37,7 +37,7 @@ def upload(request):
 
 def input():
     context={'message': '--','title':'Verbal Octopus'}
-    return render(request,'template.html',context);
+    return render(request,'inputtemplate.html',context);
     
 
 
