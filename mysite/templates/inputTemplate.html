@@ -1,0 +1,36 @@
+{% extends 'template.html' %}
+<DOCTYPE html>
+
+<html>
+<head>
+<title>Verbal Octopus</title>
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<main>
+<h1> Verbal Octopus </h1>
+<ol>
+<li>CSS structure</li>
+<li>Build Zeist initial service</li>
+<li>correct paths</li>
+</ol>
+<p></p>
+ <form method="post" enctype="multipart/form-data">
+      
+       <input type="file" name="my_file">
+       <button type="submit">Upload</button>
+   </form>
+
+<script>
+console.log("logging");
+function sendingstone(){fetch('https://www.verbaloctopus.com/--zeist/upload/',{method:'POST'})};
+function upload(){fileObj=document.getElementById('file').files;sendingstone();console.log("New log")};
+//console.log(document.getElementById('incomming'));
+//fetch(https://verbalsquid.com/--zest/upload/);
+
+
+
+</script>
+</main>
+</body>
+</html>
