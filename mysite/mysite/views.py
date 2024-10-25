@@ -29,6 +29,8 @@ def upload(request):
     print(request);
     print(request.method);
     print(request.FILES);
+    print(request.POST);
+    #print(request.FILES.get);
     return HttpResponse("success");
 
 
