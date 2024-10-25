@@ -36,5 +36,5 @@ urlpatterns = [
     path('', views.entry),
     path('ts/', include("TS1Proj.urls")),
     path('upload/', views.upload), 
-    path('groanedx/', views.input), 
+    path('--bogo/', views.input), 
 ]
