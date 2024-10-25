@@ -34,7 +34,7 @@ def upload(request):
     print(request.FILES.keys());
     return HttpResponse("success");
     
-
+@csrf_exempt
 def input(request):
     context={'message': '--','title':'Verbal Octopus'}
     return render(request,'inputTemplate.html',context);
