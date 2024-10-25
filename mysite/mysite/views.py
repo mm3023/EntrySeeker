@@ -36,7 +36,7 @@ def upload(request):
     
 
 def input():
-    return HttpResponse("success");
+    return render(request,'template.html',context);
     
 
 
