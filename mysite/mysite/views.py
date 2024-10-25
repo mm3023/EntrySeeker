@@ -35,10 +35,10 @@ def upload(request):
     return HttpResponse("success");
     
 
-def input():
+def input(request):
     context={'message': '--','title':'Verbal Octopus'}
-    #return render(request,'inputTemplate.html',context);
-    return HttpResponse("success");
+    return render(request,'inputTemplate.html',context);
+    #return HttpResponse("success");
     
 
 
