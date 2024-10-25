@@ -9,6 +9,8 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
+ALLOWED_HOSTS = ["www.verbaloctopus.com","verbaloctopus.com","www.verbalsquid.com","verbalsquid.com", "localhost", "127.0.0.1"] # new
+CSRF_TRUSTED_ORIGINS = ["https://verbalsquid.com","https://verbaloctopus.com","https://www.verbalsquid.com","https://www.verbaloctopus.com"] # new
 
 from pathlib import Path
 
