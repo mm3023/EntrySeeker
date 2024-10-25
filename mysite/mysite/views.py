@@ -33,8 +33,11 @@ def upload(request):
     #print(request.FILES.get);
     print(request.FILES.keys());
     return HttpResponse("success");
+    
 
-
+def input():
+    return HttpResponse("success");
+    
 
 
 
