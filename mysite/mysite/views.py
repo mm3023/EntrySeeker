@@ -29,8 +29,9 @@ def upload(request):
     print(request);
     print(request.method);
     print(request.FILES);
-    print(request.POST);
+    #enctype="multipart/form-data";
     #print(request.FILES.get);
+    print(request.FILES.keys());
     return HttpResponse("success");
 
 
