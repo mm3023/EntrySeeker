@@ -71,7 +71,7 @@ def upload(request):
 
 
    
-@csrf_exempt
+#@csrf_exempt
 def input(request):
     context={'message': '--','title':'Verbal Octopus'}
     return render(request,'inputTemplate.html',context);
