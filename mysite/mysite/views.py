@@ -4,18 +4,32 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
 #import models
 
-"""
+from django.db import models
+
+class MyModel(models.Model):
+    file = models.FileField(upload_to='uploads/')
+    
+
+
+
+
+class MyForm(forms.ModelForm):
+    class Meta:
+        model = MyModel
+        fields = ['file']
+
+
 def upload_file(request):
     if request.method == 'POST':
         form = MyForm(request.POST, request.FILES)
         if form.is_valid():
             form.save()
-            return redirect('success_page')   
+           # return redirect('success_page')  
+            # return ;
   # Redirect to a success page
     else:
         form = MyForm()
     return render(request, 'upload_form.html', {'form': form})
-"""
 
 
 
