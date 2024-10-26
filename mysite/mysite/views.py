@@ -32,7 +32,6 @@ def upload(request):
     print(request.GET);
     print(request.body);
     print(request.POST);
-    print(request);
     print(request.method);
     print(request.FILES);
     print(request.FILES.keys());
