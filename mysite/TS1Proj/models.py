@@ -2,15 +2,35 @@ import requests;
 import json
 import pandas
 from datetime import datetime
+from django import forms
 
 
 
+class MyModel(models.Model):
+    file = models.FileField(upload_to='uploads/')
+
+
+
+class MyForm(forms.ModelForm):
+    class Meta:
+        model = MyModel
+        fields = ['file']
+
+
+
+
+
+
+
+
+
+"""
 
 def zeist_initiate():
     print("zeist is online");
     return 0;
 #zeist_initiate();
-
+"""
 def JsonRequestResolver1(x):
         #test_for_string=type(x);
         if type(x)!=type('x'):
