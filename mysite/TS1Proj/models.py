@@ -4,7 +4,7 @@ import pandas
 from datetime import datetime
 from django import forms
 
-
+"""
 from django.db import models
 
 class MyModel(models.Model):
@@ -19,7 +19,7 @@ class MyForm(forms.ModelForm):
         model = MyModel
         fields = ['file']
 
-
+"""
 
 
 
