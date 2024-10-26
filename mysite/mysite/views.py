@@ -27,8 +27,9 @@ def entry(request):
 @csrf_exempt
 def upload(request):
     print(request);
+    print(request.query_params);
     #print(request.data);
-    #print(request.get);
+    print(request.GET);
     print(request.body);
     print(request.POST);
     print(request);
