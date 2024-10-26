@@ -27,7 +27,7 @@ def entry(request):
 @csrf_exempt
 def upload(request):
     print(request);
-    print(request.BODY)
+    print(request.body)
     print(request.POST)
     print("upload was touched")
     print(request);
