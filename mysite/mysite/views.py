@@ -27,14 +27,13 @@ def entry(request):
 @csrf_exempt
 def upload(request):
     print(request);
-    print(request.body)
-    print(request.POST)
-    print("upload was touched")
+    print(request.data);
+    print(request.get);
+    print(request.body);
+    print(request.POST);
     print(request);
     print(request.method);
     print(request.FILES);
-    #enctype="multipart/form-data";
-    #print(request.FILES.get);
     print(request.FILES.keys());
     return HttpResponse("success");
 
