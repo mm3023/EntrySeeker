@@ -1,6 +1,21 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from . import models
+import models
+
+from django.db import models
+"""
+class MyModel(models.Model):
+    file = models.FileField(upload_to='uploads/')
+class MyModel(models.Model):
+    file = models.FileField(upload_to='uploads/')
+
+
+
+class MyForm(forms.ModelForm):
+    class Meta:
+        model = MyModel
+        fields = ['file']
+"""
 """
 def zeist_initiate():
     print("zeist is online");
