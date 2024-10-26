@@ -2,6 +2,19 @@
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
+from * import models
+
+
+def upload_file(request):
+    if request.method == 'POST':
+        form = MyForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('success_page')   
+  # Redirect to a success page
+    else:
+        form = MyForm()
+    return render(request, 'upload_form.html', {'form': form})
 
 
 
