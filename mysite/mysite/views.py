@@ -28,7 +28,7 @@ def entry(request):
 def upload(request):
     print(request);
     #print(request.data);
-    print(request.get);
+    #print(request.get);
     print(request.body);
     print(request.POST);
     print(request);
