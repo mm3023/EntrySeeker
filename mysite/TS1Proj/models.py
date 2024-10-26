@@ -5,7 +5,10 @@ from datetime import datetime
 from django import forms
 
 
+from django.db import models
 
+class MyModel(models.Model):
+    file = models.FileField(upload_to='uploads/')
 class MyModel(models.Model):
     file = models.FileField(upload_to='uploads/')
 
