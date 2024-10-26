@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-import models
+from . import models
 
 #from django.db import models
 """
