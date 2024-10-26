@@ -23,7 +23,7 @@ def entry(request):
     #print('---- Main triggered ------ ');
     return HttpResponse("main reporting zeist++");
 
-
+@method_decorator(csrf_exempt)
 @csrf_exempt
 def upload(request):
     print(request);
@@ -37,7 +37,10 @@ def upload(request):
     #print(request.FILES.get);
     print(request.FILES.keys());
     return HttpResponse("success");
-    
+
+
+
+@method_decorator(csrf_exempt)    
 @csrf_exempt
 def input(request):
     context={'message': '--','title':'Verbal Octopus'}
