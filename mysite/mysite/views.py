@@ -2,7 +2,7 @@
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
-#from . import models
+import models
 
 """
 def upload_file(request):
