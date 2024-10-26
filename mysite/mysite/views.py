@@ -5,7 +5,7 @@ from django.shortcuts import render, redirect
 from * import models
 
 
-def upload_file(request):
+<!----def upload_file(request):
     if request.method == 'POST':
         form = MyForm(request.POST, request.FILES)
         if form.is_valid():
@@ -14,7 +14,7 @@ def upload_file(request):
   # Redirect to a success page
     else:
         form = MyForm()
-    return render(request, 'upload_form.html', {'form': form})
+    return render(request, 'upload_form.html', {'form': form}) --->
 
 
 
