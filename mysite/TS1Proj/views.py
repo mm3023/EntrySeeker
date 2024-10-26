@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 import models
 
-from django.db import models
+#from django.db import models
 """
 class MyModel(models.Model):
     file = models.FileField(upload_to='uploads/')
