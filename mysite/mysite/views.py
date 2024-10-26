@@ -4,6 +4,7 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
 #import models
 
+"""
 from django.db import models
 
 class MyModel(models.Model):
@@ -30,7 +31,7 @@ def upload_file(request):
     else:
         form = MyForm()
     return render(request, 'upload_form.html', {'form': form})
-
+"""
 
 
 
