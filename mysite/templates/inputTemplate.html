@@ -16,7 +16,7 @@
 </ol>
 <p></p>
 
-    
+ const formData = new FormData(form)   
     
 <form method="post" enctype="multipart/form-data">
     {% csrf_token %}
@@ -34,8 +34,8 @@
 
 <script>
 console.log("js starts");
-function sendingstone(){fetch('https://www.verbaloctopus.com/--zeist/upload/',{method:'POST'})};
-function upload(){console.log("does upload even begin?");fileObj=document.getElementById('tform').files;sendingstone();console.log("end js")};
+function sendingstone(dat){fetch('https://www.verbaloctopus.com/--zeist/upload/',{method:'POST',body:dat})};
+function upload(){console.log("does upload even begin?");fileObj=document.getElementById('tform').files;const formData = new FormData(fileObj);sendingstone(formData);console.log("end js")};
 
 
 
