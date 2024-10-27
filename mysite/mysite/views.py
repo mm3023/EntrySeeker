@@ -58,14 +58,16 @@ def entry(request):
 def upload(request):
     print(request);
     print(request.method);
+    print(request.FILES);
     #print(request.query_params);
     #print(request.data);
-    print(request.GET);
+    #print(request.GET);
+    """
     print(request.body);
     print(request.POST);
-    print(request.method);
     print(request.FILES);
     print(request.FILES.keys());
+    """
     return HttpResponse("success");
 
 
