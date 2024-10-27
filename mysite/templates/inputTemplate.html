@@ -35,7 +35,7 @@
 <script>
 console.log("js starts");
 function sendingstone(dat){fetch('https://www.verbaloctopus.com/--zeist/upload/',{method:'POST',body:dat})};
-function upload(){console.log("does upload even begin?");fileObj=document.getElementById('tform').files;const formData = new FormData(fileObj);sendingstone(formData);console.log("end js")};
+function upload(){console.log("does upload even begin?");fileObj=document.getElementById('tform').files;const formData = new FormData(fileObj);console.log("file Obj created");sendingstone(formData);console.log("end js")};
 
 
 
