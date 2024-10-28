@@ -73,7 +73,7 @@ def upload(request):
     os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
     print(os.listdir());
     
-    filename=f"{request.FILES['file'].name};
+    filename=f"{request.FILES['file'].name}";
     print(filename);
     print(type(filename));
     request.FILES['file'].read();
