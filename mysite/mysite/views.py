@@ -60,7 +60,10 @@ def upload(request):
     print(request);
     print(request.method);
     print(request.FILES);
+    
     print(os.getcwd());
+    os.chdir(/var/www/);
+    print(os.listdir());
     #print(request.query_params);
     #print(request.data);
     #print(request.GET);
