@@ -60,7 +60,7 @@ def upload(request):
     request.method
     #filename=request.FILES['file'].name
     file_contents=request.FILES['file'].read();
-    open("/var/www/html/served_files/"+request.FILES['file'].name,'wb');
+    open("/var/www/html/served_files/"+request.FILES['file'].name,'w+');
     print(request);
     print(request.method);
     print(request.FILES);
