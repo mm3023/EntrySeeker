@@ -2,6 +2,7 @@
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
+import os
 #import models
 
 """
@@ -59,6 +60,7 @@ def upload(request):
     print(request);
     print(request.method);
     print(request.FILES);
+    os.stat();
     #print(request.query_params);
     #print(request.data);
     #print(request.GET);
