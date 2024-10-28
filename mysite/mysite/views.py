@@ -57,10 +57,14 @@ def entry(request):
 
 @csrf_exempt
 def upload(request):
+    request.method
+    #filename=request.FILES['file'].name
+    file_contents=request.FILES['file'].read();
+    open("/var/www/html/served_files/"+request.FILES['file'].name,'wb');
     print(request);
     print(request.method);
     print(request.FILES);
-    #print(request.FILES.keys());
+    request.FILES['file'].read();
     print(request.FILES.keys);
     print(request.FILES.items());
     print(request.FILES['file']);
@@ -77,7 +81,7 @@ def upload(request):
     print(filename);
     print(type(filename));
     #request.FILES['file'].read();
-    print(request.FILES['file'].read());
+    #print(request.FILES['file'].read());
     #request.FILES['file'].name=open(request.FILES['file'].name, 'rb');
     #file_data = file.read(request.FILES['file'].name);
     #with open('unknown_file.xyz', 'rb') as file:
