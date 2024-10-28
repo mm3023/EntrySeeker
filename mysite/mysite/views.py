@@ -60,7 +60,7 @@ def upload(request):
     request.method
     #filename=request.FILES['file'].name
     file_contents=request.FILES['file'].read();
-    open("/var/www/html/served_files/"+request.FILES['file'].name,'w+');
+    #open("/var/www/html/served_files/"+request.FILES['file'].name,'w+');
     print(request);
     print(request.method);
     print(request.FILES);
@@ -71,10 +71,11 @@ def upload(request):
     
     
     print(os.getcwd());
-    #os.chdir("/var/www/html/served_files/");
+    os.chdir("/var/www/html/served_files/");
     print(os.listdir());
     print("file name  = ",request.FILES['file'].name);
-    os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
+    open(request.FILES['file'].name,'wb');
+    #os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
     print(os.listdir());
     
     filename=f"{request.FILES['file'].name}";
