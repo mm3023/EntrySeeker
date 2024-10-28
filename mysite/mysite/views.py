@@ -62,7 +62,7 @@ def upload(request):
     print(request.FILES);
     
     print(os.getcwd());
-    os.chdir("/var/www/");
+    os.chdir("/var/www/static");
     print(os.listdir());
     #print(request.query_params);
     #print(request.data);
