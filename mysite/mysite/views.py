@@ -60,7 +60,7 @@ def upload(request):
     print(request);
     print(request.method);
     print(request.FILES);
-    os.stat();
+    print(os.getcwd());
     #print(request.query_params);
     #print(request.data);
     #print(request.GET);
