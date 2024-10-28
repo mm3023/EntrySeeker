@@ -69,7 +69,7 @@ def upload(request):
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
     print(os.listdir());
-    print("file name  = ",request[0].FILES.name);
+    #print("file name  = ",request[0].FILES.name);
     os.path.join("/var/www/html/served_files/",request.FILES['file']);
     print(os.listdir());
 
