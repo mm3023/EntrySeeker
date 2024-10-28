@@ -63,6 +63,7 @@ def upload(request):
     #print(request.FILES.keys());
     print(request.FILES.keys);
     print(request.FILES.items());
+    print(request.FILES['file']);
     
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
