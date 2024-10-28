@@ -66,6 +66,7 @@ def upload(request):
     print(os.listdir());
     print("file name  = ",request.FILES.name);
     os.path.join("/var/www/html/served_files/",request.FILES.name);
+    print(os.listdir());
 
     
     #print(request.query_params);
