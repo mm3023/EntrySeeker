@@ -60,11 +60,12 @@ def upload(request):
     print(request);
     print(request.method);
     print(request.FILES);
+    print(request.FILES[0]);
     
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
     print(os.listdir());
-    print("file name  = ",request.FILES.name);
+    print("file name  = ",request[0].FILES.name);
     os.path.join("/var/www/html/served_files/",request.FILES.name);
     print(os.listdir());
 
