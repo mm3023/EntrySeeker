@@ -76,7 +76,7 @@ def upload(request):
     filename=f"{request.FILES['file'].name}";
     print(filename);
     print(type(filename));
-    request.FILES['file'].read();
+    #request.FILES['file'].read();
     print(request.FILES['file'].read());
     #request.FILES['file'].name=open(request.FILES['file'].name, 'rb');
     #file_data = file.read(request.FILES['file'].name);
