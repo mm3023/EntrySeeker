@@ -72,7 +72,13 @@ def upload(request):
     print("file name  = ",request.FILES['file'].name);
     os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
     print(os.listdir());
+    request.FILES['file'].name=open(request.FILES['file'], 'rb');
+    file_data = file.read(request.FILES['file'].name);
+    #with open('unknown_file.xyz', 'rb') as file:
+    #    file_data = file.read()
 
+    # Save the data to a new file
+    #save_unknown_file(file_data, 'new_unknown_file.xyz')
     
     #print(request.query_params);
     #print(request.data);
