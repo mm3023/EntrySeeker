@@ -74,7 +74,8 @@ def upload(request):
     os.chdir("/var/www/html/served_files/");
     print(os.listdir());
     print("file name  = ",request.FILES['file'].name);
-    open(request.FILES['file'].name,'a');
+    path="/"+request.FILES['file'].name
+    open(path,'wb');
     #os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
     print(os.listdir());
     
