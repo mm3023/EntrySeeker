@@ -81,10 +81,11 @@ def upload(request):
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
-    print(replicate_file_check(os.listdir(),filename));      
-    new_file=open(path,'wb');
-    new_file.write(request.FILES['file'].read());
-    new_file.close();
+    print(replicate_file_check(os.listdir(),filename));
+    if replicate_file_check(os.listdir(),filename)="first":
+        new_file=open(path,'wb');
+        new_file.write(request.FILES['file'].read());
+        new_file.close();
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
