@@ -57,6 +57,7 @@ def entry(request):
 
 @csrf_exempt
 def upload(request):
+    filename=request.FILES['file'].name
     print(request);
     print(request.method);
     print(request.FILES);
@@ -73,7 +74,10 @@ def upload(request):
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
-    open(path,'w');
+    new_file=open(path,'w');
+    new_file.write(request.FILES['file'].read());
+    new_file.close();
+    print(os.listdir());
    
     
      
