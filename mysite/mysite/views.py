@@ -73,7 +73,7 @@ def upload(request):
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
-    open(path);
+    open(path,'w');
    
     
      
