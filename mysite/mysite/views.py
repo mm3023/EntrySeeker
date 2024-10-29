@@ -69,7 +69,7 @@ def upload(request):
     print(os.getcwd());
     print(os.listdir());
     print("file name  = ",request.FILES['file'].name);
-    path="/"+request.FILES['file'].name
+    path=request.FILES['file'].name
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
