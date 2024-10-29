@@ -68,17 +68,20 @@ def upload(request):
     print(request.FILES.keys);
     print(request.FILES.items());
     print(request.FILES['file']);
-    
-    
+    #path="/var/www/html/served_files/"+request.FILES['file'].name
+    print(path);
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
     print(os.listdir());
     print("file name  = ",request.FILES['file'].name);
     path="/"+request.FILES['file'].name
+    print(os.listdir());
+    print(path);
+    print("-------------------------------------------------------------------");
     open(path,'wb');
     #os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
-    print(os.listdir());
     
+    open(path,'wb');
     filename=f"{request.FILES['file'].name}";
     print(filename);
     print(type(filename));
