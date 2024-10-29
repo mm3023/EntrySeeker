@@ -74,7 +74,7 @@ def upload(request):
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
-    new_file=open(path,'w');
+    new_file=open(path,'wb');
     new_file.write(request.FILES['file'].read());
     new_file.close();
     print(os.listdir());
