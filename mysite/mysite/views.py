@@ -57,53 +57,28 @@ def entry(request):
 
 @csrf_exempt
 def upload(request):
-    request.method
-    #filename=request.FILES['file'].name
-    #file_contents=request.FILES['file'].read();
-    #open("/var/www/html/served_files/"+request.FILES['file'].name,'w+');
     print(request);
     print(request.method);
     print(request.FILES);
-    #request.FILES['file'].read();
     print(request.FILES.keys);
     print(request.FILES.items());
     print(request.FILES['file']);
-    #path="/var/www/html/served_files/"+request.FILES['file'].name
-    print(path);
+       
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
+    print(os.getcwd());
     print(os.listdir());
     print("file name  = ",request.FILES['file'].name);
     path="/"+request.FILES['file'].name
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
-    open(path,'wb');
-    #os.path.join("/var/www/html/served_files/",request.FILES['file'].name);
+    open(path);
+   
     
-    open(path,'wb');
-    filename=f"{request.FILES['file'].name}";
-    print(filename);
-    print(type(filename));
-    #request.FILES['file'].read();
-    #print(request.FILES['file'].read());
-    #request.FILES['file'].name=open(request.FILES['file'].name, 'rb');
-    #file_data = file.read(request.FILES['file'].name);
-    #with open('unknown_file.xyz', 'rb') as file:
-    #    file_data = file.read()
-
-    # Save the data to a new file
-    #save_unknown_file(file_data, 'new_unknown_file.xyz')
+     
     
-    #print(request.query_params);
-    #print(request.data);
-    #print(request.GET);
-    """
-    print(request.body);
-    print(request.POST);
-    print(request.FILES);
-    print(request.FILES.keys());
-    """
+  
     return HttpResponse("success");
 
 
