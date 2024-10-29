@@ -58,9 +58,16 @@ def entry(request):
 @csrf_exempt
 def upload(request):
     filename=request.FILES['file'].name
-    print(request);
-    print(request.method);
-    print(request.FILES);
+    def replicate_file_check(a,b):
+        if b in a:
+           return "duplicate";
+        else:
+           return "first";
+    
+    
+    #print(request);
+    #print(request.method);
+    #print(request.FILES);
     print(request.FILES.keys);
     print(request.FILES.items());
     print(request.FILES['file']);
@@ -74,6 +81,7 @@ def upload(request):
     print(os.listdir());
     print(path);
     print("-------------------------------------------------------------------");
+    print(replicate_file_check(os.listdir(),filename));      
     new_file=open(path,'wb');
     new_file.write(request.FILES['file'].read());
     new_file.close();
@@ -81,17 +89,7 @@ def upload(request):
     print(os.listdir());
     print(type(os.listdir()));
 
-    def replicate_file_check(a,b):
-        if b in a:
-            #print("duplicate file name ");
-            return "duplicate";
-            
-    print(replicate_file_check(os.listdir(),filename)); 
-    
-    #print(open(path,'r').read());
-    
-   
-    
+  
      
     
   
