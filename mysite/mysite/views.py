@@ -80,6 +80,14 @@ def upload(request):
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
+
+    def replicate_file_check(a,b):
+        if b in a:
+            #print("duplicate file name ");
+            return "duplicate";
+            
+    print(replicate_file_check(os.listdir(),filename)); 
+    
     #print(open(path,'r').read());
     
    
