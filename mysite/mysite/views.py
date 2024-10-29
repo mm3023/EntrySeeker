@@ -78,6 +78,8 @@ def upload(request):
     new_file.write(request.FILES['file'].read());
     new_file.close();
     print(os.listdir());
+    print(open(path,'r').read());
+    
    
     
      
