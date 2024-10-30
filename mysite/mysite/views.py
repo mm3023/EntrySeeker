@@ -54,10 +54,10 @@ def entry(request):
     #print('---- Main triggered ------ ');
     return HttpResponse("main reporting zeist++");
 
-
+from datetime import datetime;
 @csrf_exempt
 def upload(request):
-    from datetime import datetime;
+   
     
     filename=request.FILES['file'].name+datetime.now();
     def replicate_file_check(a,b):
