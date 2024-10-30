@@ -57,7 +57,7 @@ def entry(request):
 
 @csrf_exempt
 def upload(request):
-    import datetime;
+    from datetime import datetime;
     
     filename=request.FILES['file'].name+datetime.now();
     def replicate_file_check(a,b):
