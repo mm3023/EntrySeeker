@@ -60,9 +60,9 @@ import datetime;
 def upload(request):
     print(type(datetime.datetime.now()));
     print(datetime.datetime.now())
-    print(f'datetime.datetime.now())
+    print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     print("------------------------------------------")
-    filename=request.FILES['file'].name+datetime.datetime.now();
+    filename=request.FILES['file'].name+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print(filename);
     """
     print(os.getcwd());
