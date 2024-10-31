@@ -62,7 +62,7 @@ def upload(request):
     print(datetime.datetime.now())
     print(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     print("------------------------------------------")
-    filename=request.FILES['file'].name+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
+    filename="/var/www/html/served_files/"+request.FILES['file'].name+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print(filename);
     """
     print(os.getcwd());
@@ -80,7 +80,7 @@ def upload(request):
     new_file.close();
 
     
-    print(replicate_file_check(os.listdir(),filename));
+    #print(replicate_file_check(os.listdir(),filename));
     
     
     
