@@ -58,11 +58,12 @@ def entry(request):
 import datetime;
 print(datetime);
 print(datetime.datetime);
+print(datetime.datetime.now());
 @csrf_exempt
 def upload(request):
    
     
-    filename=request.FILES['file'].name+datetime.now();
+    #filename=request.FILES['file'].name+datetime.now();
     """
     def replicate_file_check(a,b):
         if b in a:
