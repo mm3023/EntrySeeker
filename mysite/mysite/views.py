@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
 import os
+
 #import models
 
 """
@@ -54,23 +55,22 @@ def entry(request):
     #print('---- Main triggered ------ ');
     return HttpResponse("main reporting zeist++");
 
-from datetime import datetime;
+import datetime;
+print(datetime);
+print(datetime.datetime);
 @csrf_exempt
 def upload(request):
    
     
     filename=request.FILES['file'].name+datetime.now();
+    """
     def replicate_file_check(a,b):
         if b in a:
            return "duplicate";
         else:
            return "first";
-    
     """
-    print(request.FILES.keys);
-    print(request.FILES.items());
-    print(request.FILES['file']);
-    """   
+   
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
     print(os.getcwd());
