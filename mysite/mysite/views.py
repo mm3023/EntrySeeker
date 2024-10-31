@@ -56,43 +56,30 @@ def entry(request):
     return HttpResponse("main reporting zeist++");
 
 import datetime;
-print(datetime);
-print(datetime.datetime);
-print(datetime.datetime.now());
 @csrf_exempt
 def upload(request):
-   
-    
-    #filename=request.FILES['file'].name+datetime.now();
+    filename=request.FILES['file'].name+datetime.datetime.now();
+    print(filename);
     """
-    def replicate_file_check(a,b):
-        if b in a:
-           return "duplicate";
-        else:
-           return "first";
-    """
-   
     print(os.getcwd());
     os.chdir("/var/www/html/served_files/");
     print(os.getcwd());
     print(os.listdir());
-    print("file name  = ",filename);
+    #print("file name  = ",filename);
     path=request.FILES['file'].name
     print(os.listdir());
     print(path);
+    """
     print("-------------------------------------------------------------------");
-    new_file=open(path,'wb');
+    new_file=open(filename,'wb');
     new_file.write(request.FILES['file'].read());
     new_file.close();
 
-    """
+    
     print(replicate_file_check(os.listdir(),filename));
     
-    if replicate_file_check(os.listdir(),filename)="first":
-        new_file=open(path,'wb');
-        new_file.write(request.FILES['file'].read());
-        new_file.close();
-    """
+    
+    
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
