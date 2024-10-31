@@ -58,6 +58,8 @@ def entry(request):
 import datetime;
 @csrf_exempt
 def upload(request):
+    print(type(datetime.datetime.now()));
+    print("------------------------------------------")
     filename=request.FILES['file'].name+datetime.datetime.now();
     print(filename);
     """
