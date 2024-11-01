@@ -68,8 +68,8 @@ def upload(request):
     print(type(os.listdir()));
     
  
-    return HttpResponse("success");
-
+    #return HttpResponse("success");
+    return redirect("https://www.verbaloctopus.com/served_files") 
 
 
    
