@@ -69,7 +69,7 @@ def upload(request):
     
  
     #return HttpResponse("success");
-    return redirect("https://www.verbaloctopus.com/served_files"); 
+    return redirect("https://www.verbaloctopus.com/served_files/"); 
 
 
    
