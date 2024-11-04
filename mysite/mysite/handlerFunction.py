@@ -2,7 +2,6 @@ import datetime;
 import os;
 
 
-
 def import_fromjs(request):
     filename="/var/www/html/served_files/"+request.FILES['file'].name+'_'+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print(filename);
