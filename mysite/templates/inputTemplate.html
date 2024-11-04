@@ -9,6 +9,9 @@
 <body>
 <main>
 <h1> Verbal Octopus </h1>
+
+<iframe src="https://verbaloctopus.com/served_files" width:100%></iframe>    
+    
 <ol>
 <li>Pillars 1: 4-page site deploy - dashboard , email lander, product lander, home page </li> 
 <li>Pillars 2: investment entry points </li>     
@@ -78,7 +81,6 @@
        <button onclick="upload()" type="submit">Upload</button>
    </form> 
 
-<iframe src="https://verbaloctopus.com/served_files"></iframe>
 <script>
 function sendingstone(dat){console.log("fetch about to launch");fetch('https://www.verbaloctopus.com/--zeist/upload/',{method:'POST',body:dat})};
 function upload(){console.log("upload functions starts");fileObj=document.getElementById('itFILE').files[0];console.log(fileObj);formData = new FormData();formData.append('file',fileObj);console.log(formData);for(var data of formData){console.log(data);};sendingstone(formData);console.log("end js")};
