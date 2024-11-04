@@ -31,7 +31,8 @@ def import_fromjs(pg_request):
 
 #@csrf_exempt
 def upload(request):
-    #import_fromjs(pg_request);
+    import_fromjs(pg_request);
+    """
     filename="/var/www/html/served_files/"+request.FILES['file'].name+'_'+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print(filename);
         
@@ -42,7 +43,7 @@ def upload(request):
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
-        
+    """    
     return redirect("https://www.verbaloctopus.com/served_files"); 
 
 
