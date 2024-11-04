@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
 import os
+import handlerFunctions
 
 
 
@@ -12,6 +13,7 @@ def entry(request):
     #print('---- Main triggered ------ ');
     return HttpResponse("main reporting zeist++");
 
+"""
 import datetime;
        
 
@@ -29,9 +31,12 @@ def import_fromjs(request):
     print(os.listdir());
     print(type(os.listdir()));
 
+"""
+
+
 #@csrf_exempt
 def upload(request):
-    import_fromjs(request);
+    handlerFunctions.import_fromjs(request);
     return redirect("https://www.verbaloctopus.com/served_files"); 
 
 
