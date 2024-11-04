@@ -20,6 +20,9 @@ def upload(request):
     handlerFunctions.import_fromjs(request);
     return redirect("https://www.verbaloctopus.com/served_files"); 
 
+#def clear_served_files():
+    
+
 
    
 #@csrf_exempt
@@ -27,6 +30,7 @@ def input(request):
     context={'message': '--','title':'Verbal Octopus'}
     return render(request,'inputTemplate.html',context);
     #return HttpResponse("success");
+
     
 
 
