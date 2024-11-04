@@ -13,8 +13,25 @@ def entry(request):
     return HttpResponse("main reporting zeist++");
 
 import datetime;
+       
+
+
+
+def import_fromjs(pg_request):
+    filename="/var/www/html/served_files/"+request.FILES['file'].name+'_'+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
+    print(filename);
+        
+    new_file=open(filename,'wb');
+    new_file.write(pg_request.FILES['file'].read());
+    new_file.close();
+     
+    os.listdir();
+    print(os.listdir());
+    print(type(os.listdir()));
+
 #@csrf_exempt
 def upload(request):
+    #import_fromjs(pg_request);
     filename="/var/www/html/served_files/"+request.FILES['file'].name+'_'+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print(filename);
         
@@ -26,7 +43,7 @@ def upload(request):
     print(os.listdir());
     print(type(os.listdir()));
         
-    return redirect("https://www.verbaloctopus.com/served_files/"); 
+    return redirect("https://www.verbaloctopus.com/served_files"); 
 
 
    
