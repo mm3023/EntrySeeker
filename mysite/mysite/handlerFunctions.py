@@ -1,4 +1,4 @@
-
+import datetime;
 
 
 def import_fromjs(request):
@@ -12,3 +12,4 @@ def import_fromjs(request):
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
+    return 0;
