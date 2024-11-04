@@ -17,7 +17,8 @@ import datetime;
 
 
 
-def import_fromjs(pg_request):
+def import_fromjs(page_request):
+    pg_request=page_request
     filename="/var/www/html/served_files/"+request.FILES['file'].name+'_'+datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S");
     print(filename);
         
