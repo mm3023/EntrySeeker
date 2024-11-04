@@ -3,6 +3,9 @@
 
 <html>
 <head>
+<style>
+#on_page_fram{width:100%}    
+</style>    
 <title>Verbal Octopus</title>
 {% csrf_token %}
 </head>
@@ -10,7 +13,8 @@
 <main>
 <h1> Verbal Octopus </h1>
 
-<iframe src="https://verbaloctopus.com/served_files" width:100%></iframe>    
+    
+<iframe style=width:80% id='on_page_frame' src="https://verbaloctopus.com/served_files"></iframe>    
     
 <ol>
 <li>Pillars 1: 4-page site deploy - dashboard , email lander, product lander, home page </li> 
