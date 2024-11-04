@@ -1,4 +1,6 @@
 import datetime;
+import os;
+
 
 
 def import_fromjs(request):
@@ -12,4 +14,9 @@ def import_fromjs(request):
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
+
+
+    print("----current dir---",os.getcwd);
+    print("----List dir-------,os.listdir());
+    print("----permissions W ?--",os.access(os.getcwd,os.W_OK));      
     return 0;
