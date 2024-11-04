@@ -25,9 +25,7 @@ def upload(request):
     os.listdir();
     print(os.listdir());
     print(type(os.listdir()));
-    
- 
-    #return HttpResponse("success");
+        
     return redirect("https://www.verbaloctopus.com/served_files/"); 
 
 
