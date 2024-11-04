@@ -16,6 +16,6 @@ def import_fromjs(request):
 
 
     print("----current dir---",os.getcwd);
-    print("----List dir-------,os.listdir());
+    print("----List dir-------",os.listdir());
     print("----permissions W ?--",os.access(os.getcwd,os.W_OK));      
     return 0;
