@@ -18,7 +18,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-from polls.urls import *  # Import all URL patterns from polls.urls
+#from polls.urls import *  # Import all URL patterns from polls.urls
 from . import views  # Import views from the current app
 import logging
 logger = logging.getLogger(__name__)
