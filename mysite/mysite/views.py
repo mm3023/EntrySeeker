@@ -22,6 +22,8 @@ def upload(request):
 
 def clear_served_files(request):
     print("os.getcwd()--",os.getcwd());
+    os.chdir("/var/www/html/served_files")
+    print("os.getcwd()--",os.getcwd());
     return 0;
     
 
