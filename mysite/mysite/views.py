@@ -24,6 +24,7 @@ def clear_served_files(request):
     print("os.getcwd()--",os.getcwd());
     os.chdir("/var/www/html/served_files")
     print("os.getcwd()--",os.getcwd());
+    print("os.listdir() -- ",os.listdir());
     return 0;
     
 
