@@ -20,7 +20,9 @@ def upload(request):
     handlerFunctions.import_fromjs(request);
     return redirect("https://www.verbaloctopus.com/served_files"); 
 
-#def clear_served_files():
+def clear_served_files():
+    print("os.getcwd()--",os.getcwd());
+    return 0;
     
 
 
