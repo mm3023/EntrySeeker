@@ -37,8 +37,10 @@ def clear_served_files(request):
     print("check point 3")
     print(os.path.isfile(os.listdir()[0]));
     print("check point 4")
-    print(os.path.isfile(os.listdir()[0]).find('/'));
+    os.listdir()[0]).find('/')
     print("check point 5")
+    print(os.path.isfile(os.listdir()[0]).find('/'));
+    print("check point 6")
     
     return 0;
     
