@@ -28,7 +28,7 @@ def clear_served_files(request):
     print("----permissions R ?--",os.access(os.getcwd(),os.R_OK));
     print("os.listdir()[0]----",os.listdir()[0]);
     print("os.listdir()[1]----",os.listdir()[1]);
-    print("os.listdir()[2]----",os.listdir()[2));
+    print("os.listdir()[2]----",os.listdir()[2]));
     
     #os.path.isfile(path)
     return 0;
