@@ -33,6 +33,9 @@ def clear_served_files(request):
     os.path.isfile(os.listdir()[0])
     print(os.path.isfile(os.listdir()[0]));
     print(type(os.path.isfile(os.listdir()[0])));
+
+    print(f'os.path.isfile(os.listdir()[0]));
+    os.path.isfile(os.listdir()[0]).find('/');
     
     return 0;
     
