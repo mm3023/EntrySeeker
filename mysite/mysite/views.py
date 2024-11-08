@@ -25,7 +25,7 @@ def entry(request):
 def upload(request):
     #handlerFunctions.import_fromjs(request);
     
-    import_fromjs=threading.Thread(target=handlerFunctions.import_fromjs(request));
+    import_fromjs=threading.Thread(target=handlerFunctions.import_fromjs(), args=(request));
     import_fromjs.start();
 
     
