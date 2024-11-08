@@ -17,7 +17,7 @@ def entry(request):
 #@csrf_exempt
 def upload(request):
     handlerFunctions.import_fromjs(request);
-    return redirect("upload()"); 
+    return redirect("input()"); 
 
 def clear_served_files(request):
     print("os.getcwd()--",os.getcwd());
