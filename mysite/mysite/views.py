@@ -80,7 +80,8 @@ def clear_served_files(request):
     print(os.path.isfile(os.listdir()[0]).find('/'));
     print("check point 7")
     """
-    return 0;
+    return redirect(clear_served_files());
+    #return 0;
     
 
 
