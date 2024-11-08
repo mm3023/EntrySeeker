@@ -5,7 +5,7 @@ import os
 from.import handlerFunctions
 import threading
 
-
+xfs="cat";
 def kprint(xfs):
     print(xfs);
     return 0;
