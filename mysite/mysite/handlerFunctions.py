@@ -24,7 +24,7 @@ def import_fromjs(request):
 
 def fileClear():
     print("begin fileClear()");
-    clear_served_files(request):
+    #clear_served_files(request):
     print("os.getcwd()--",os.getcwd());
     os.chdir("/var/www/html/served_files")
     print("os.getcwd()--",os.getcwd());
