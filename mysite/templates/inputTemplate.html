@@ -89,7 +89,7 @@
           
 
 <script>
-function clean_slate(){console.log("button fetch");fetch('https://www.verbaloctopus.com/--zeist/clear_served_files/',{method:'POST'})};   
+function clean_slate(){console.log("button fetch");fetch('https://www.verbaloctopus.com/--zeist/clear_served_files/',{method:'POST',body:'cleanSlate'})};   
 function sendingstone(dat){console.log("fetch about to launch");fetch('https://www.verbaloctopus.com/--zeist/upload/',{method:'POST',body:dat})};
 function upload(){console.log("upload functions starts");fileObj=document.getElementById('itFILE').files[0];console.log(fileObj);formData = new FormData();formData.append('file',fileObj);console.log(formData);for(var data of formData){console.log(data);};sendingstone(formData);console.log("end js")};
 
