@@ -3,8 +3,15 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
 import os
 from.import handlerFunctions
+import threading
 
 
+def kprint(xfs):
+    print(xfs);
+    return 0;
+print("Load inficator");
+kprint("cracker-barrel");
+threading.Thread(target=kprint(xfs));
 
 
 
@@ -17,6 +24,10 @@ def entry(request):
 #@csrf_exempt
 def upload(request):
     handlerFunctions.import_fromjs(request);
+    
+    #threading.Thread(target=handlerFunctions.import_fromjs(request));
+
+    
     return redirect("input()"); 
 
 def clear_served_files(request):
