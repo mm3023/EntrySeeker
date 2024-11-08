@@ -5,13 +5,13 @@ import os
 from.import handlerFunctions
 import threading
 
-xfs="cat";
+#xfs="cat";
 def kprint(xfs):
     print(xfs);
     return 0;
 print("Load inficator");
 kprint("cracker-barrel");
-threading.Thread(target=kprint(xfs));
+threading.Thread(target=kprint('dog'));
 
 
 
