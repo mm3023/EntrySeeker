@@ -18,7 +18,7 @@ def entry(request):
 #@csrf_exempt
 def upload(request):
     handlerFunctions.import_fromjs(request);
-    return redirect("https://www.verbaloctopus.com/served_files"); 
+    return redirect("upload()"); 
 
 def clear_served_files(request):
     print("os.getcwd()--",os.getcwd());
@@ -28,10 +28,8 @@ def clear_served_files(request):
     for files in os.listdir() :
         os.remove(files);
     print("os.listdir() -- ",os.listdir());    
-    
-    
-  
-    return redirect('clear_served_files()');
+        
+    #return redirect('clear_served_files()');
     #return 0;
     
 
