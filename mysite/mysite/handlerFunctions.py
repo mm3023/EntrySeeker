@@ -20,3 +20,17 @@ def import_fromjs(request):
     print("----permissions W ?--",os.access(os.getcwd(),os.W_OK)); 
     print("end----------")
     return 0;
+
+
+def fileClear():
+    clear_served_files(request):
+    print("os.getcwd()--",os.getcwd());
+    os.chdir("/var/www/html/served_files")
+    print("os.getcwd()--",os.getcwd());
+    print("os.listdir() -- ",os.listdir());
+    for files in os.listdir() :
+        os.remove(files);
+    print("os.listdir() -- ",os.listdir());    
+        
+    #return redirect('clear_served_files()');
+    return 0;
