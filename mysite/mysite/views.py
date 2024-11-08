@@ -23,6 +23,7 @@ def upload(request):
 def clear_served_files(request):
     print("----permissions R ?--",os.access(os.getcwd(),os.R_OK));
     print(os.access(os.getcwd(),os.R_OK).find("True"));
+    
     print("check 1");
     
     
