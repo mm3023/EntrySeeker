@@ -30,7 +30,7 @@ def clear_served_files(request):
     print("os.listdir() -- ",os.listdir());    
         
     #return redirect('clear_served_files()');
-    #return 0;
+    return 0;
     
 
 
