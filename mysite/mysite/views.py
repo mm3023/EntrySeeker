@@ -21,15 +21,30 @@ def upload(request):
     return redirect("https://www.verbaloctopus.com/served_files"); 
 
 def clear_served_files(request):
+    print("----permissions R ?--",os.access(os.getcwd(),os.R_OK));
+    print(os.access(os.getcwd(),os.R_OK).find("True"));
+    
+    
+    
+    
+    """
     print("os.getcwd()--",os.getcwd());
     os.chdir("/var/www/html/served_files")
     print("os.getcwd()--",os.getcwd());
     print("os.listdir() -- ",os.listdir());
+    
+
+
+
+
+
+    
     print("----permissions R ?--",os.access(os.getcwd(),os.R_OK));
     print("os.listdir()[0]----",os.listdir()[0]);
     print("os.listdir()[1]----",os.listdir()[1]);
     print("os.listdir()[2]----",os.listdir()[2]);
     print("check point 1")
+    os.path.isfile(os.listdir()[0]).find('True');
     os.path.isfile(os.listdir()[0])
     print("check point 2")
     print(os.path.isfile(os.listdir()[0]));
@@ -48,7 +63,7 @@ def clear_served_files(request):
     
     print(os.path.isfile(os.listdir()[0]).find('/'));
     print("check point 7")
-    
+    """
     return 0;
     
 
