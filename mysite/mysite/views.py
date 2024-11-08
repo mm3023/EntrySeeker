@@ -31,6 +31,8 @@ def upload(request):
     return redirect("input()"); 
 
 def clear_served_files(request):
+    handlerFunctions.fileClear():
+    """
     print("os.getcwd()--",os.getcwd());
     os.chdir("/var/www/html/served_files")
     print("os.getcwd()--",os.getcwd());
@@ -40,6 +42,7 @@ def clear_served_files(request):
     print("os.listdir() -- ",os.listdir());    
         
     #return redirect('clear_served_files()');
+    """
     return 0;
     
 
