@@ -21,10 +21,24 @@ def upload(request):
     return redirect("https://www.verbaloctopus.com/served_files"); 
 
 def clear_served_files(request):
-    print("----permissions R ?--",os.access(os.getcwd(),os.R_OK));
-    print("find true ",str(os.access(os.getcwd(),os.R_OK)).find("True"));
-    
+    print("os.getcwd()--",os.getcwd());
+    os.chdir("/var/www/html/served_files")
+    print("os.getcwd()--",os.getcwd());
+    print("os.listdir() -- ",os.listdir());
+    for files in os.listdir() :
+        os.remove(files);
+    print("os.listdir() -- ",os.listdir());    
+    #print("----permissions R ?--",os.access(os.getcwd(),os.R_OK));
+    #print("find True ",str(os.access(os.getcwd(),os.R_OK)).find("True"));
+    """
+    File_Path-=os.getcwd();
+    if str(os.access(File_Path-,os.W_OK)).find("True"):
+       print("Permission to Write");
+    else: 
+        print("Permission not given chmod");
+    if     
     print("check 1");
+    """
     
     
     
