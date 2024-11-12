@@ -44,7 +44,9 @@ def clear_served_files(request):
         
     #return redirect('clear_served_files()');
     """
-    return 0;
+    return redirect("input()"); 
+
+    #return 0;
     
 
 
