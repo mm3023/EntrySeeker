@@ -3,8 +3,8 @@ from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
 import os
 from.import handlerFunctions
-import threading
-
+#import threading
+"""
 #xfs="cat";
 def kprint(xfs):
     print(xfs);
@@ -12,7 +12,7 @@ def kprint(xfs):
 print("Load inficator");
 kprint("cracker-barrel");
 threading.Thread(target=kprint('dog'));
-
+"""
 
 
 
