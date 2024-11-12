@@ -23,10 +23,10 @@ def entry(request):
 
 #@csrf_exempt
 def upload(request):
-    #handlerFunctions.import_fromjs(request);
+    handlerFunctions.import_fromjs(request);
     
-    import_frojs=threading.Thread(target=handlerFunctions.import_fromjs, args=(request));
-    import_frojs.start();
+    #import_frojs=threading.Thread(target=handlerFunctions.import_fromjs, args=(request));
+    #import_frojs.start();
 
     
     return redirect("input()"); 
