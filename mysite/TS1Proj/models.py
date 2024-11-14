@@ -1,3 +1,10 @@
+from __future__ import print_function
+#from googleapiclient.discovery import build
+#from google.oauth2.credentials import Credentials   
+#from datetime import datetime, timedelta 
+
+
+
 import requests;
 import json
 import pandas
@@ -5,7 +12,7 @@ from datetime import datetime
 from django import forms
 
 #google api imports
-from __future__ import print_function
+#from __future__ import print_function
 #from googleapiclient.discovery import build
 #from google.oauth2.credentials import Credentials   
 #from datetime import datetime, timedelta   
