@@ -28,6 +28,7 @@ logger = logging.getLogger(__name__)
 
 from.import googcal;
 import requests;
+import os;
 print("from urls");
 print("api test");
 print(requests.get("https://www.googleapis.com/calendar/v3"));
