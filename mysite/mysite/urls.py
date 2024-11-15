@@ -15,6 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+print("from urls");
+print("api test");
+#https://www.googleapis.com/calendar/v3
+
 
 from django.contrib import admin
 from django.urls import path, include
