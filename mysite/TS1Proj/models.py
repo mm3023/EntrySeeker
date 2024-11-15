@@ -1,24 +1,23 @@
-from __future__ import print_function
-#from googleapiclient.discovery import build
-#from google.oauth2.credentials import Credentials
+from __future__ import print_function;
 
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-#from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
-from google_auth_oauthlib.flow import InstalledAppFlow
+from google.auth.transport.requests import Request;
+from google.oauth2.credentials import Credentials;
+from googleapiclient.discovery import build;
+from googleapiclient.errors import HttpError;
+from google_auth_oauthlib.flow import InstalledAppFlow;;
 
-from datetime import datetime, timedelta 
+from datetime import datetime, timedelta; 
+import os.path;
 import requests;
-import json
-import pandas
-from django import forms
+import json;
+import pandas;
+from django import forms;
 
 calendar_id="arsaccess2022@gmail.com";
 
 
-
+# If modifying these scopes, delete the file token.json.
+SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 
