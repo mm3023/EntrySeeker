@@ -27,6 +27,14 @@ from . import views  # Import views from the current app
 import logging
 logger = logging.getLogger(__name__)
 
+
+
+import requests;
+print(requests.get("https://www.googleapis.com/calendar/v3"));
+
+
+
+
 def my_view(request):
     informate=logger.info(request.META);
     print( informate);
