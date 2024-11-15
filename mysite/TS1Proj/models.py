@@ -14,6 +14,8 @@ import pandas;
 from django import forms;
 
 calendar_id="arsaccess2022@gmail.com";
+print("os.path");
+print(os.path);
 
 
 # If modifying these scopes, delete the file token.json.
@@ -37,6 +39,7 @@ def JsonRequestResolver1(x):
             resFrame=pandas.DataFrame(response);
             #reFrame=[item.split(",") for item in resFrame];
         return resFrame;
+
 #generic calender holidays
 def open_holiday_DataFrame():
     dateString=str(datetime.now())[0:10];
@@ -47,6 +50,8 @@ def open_holiday_DataFrame():
     print(URL);
     return JsonRequestResolver1('https://openholidaysapi.org/PublicHolidaysByDate?languageIsoCode=DE&date=2023-12-25');
 
+
+"""
 
 #deprecate? troubleshoot? usually empty
 def nagerAPI():
@@ -59,7 +64,7 @@ def nagerAPI():
     print('URL');
     print(URL);
     return JsonRequestResolver1(URL);
-     
+"""     
     
 
 
@@ -67,10 +72,11 @@ def nagerAPI():
 
 
 
-#nager api alter year/country code;
+#nager api alter year/country code; deprecated?
 #https://date.nager.at/api/v3/PublicHolidays/2024/US
-print('open_holiday_DataFrame()');
-print(open_holiday_DataFrame());
+
+#print('open_holiday_DataFrame() active ');
+#print(open_holiday_DataFrame());
 
 
 
