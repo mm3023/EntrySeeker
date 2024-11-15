@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import render, redirect
-from.import models
+from TS1Proj import models
 from.import handlerFunctions
 import os
 
