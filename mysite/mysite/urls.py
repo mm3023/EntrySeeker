@@ -32,6 +32,7 @@ print("from urls");
 print("api test");
 print(requests.get("https://www.googleapis.com/calendar/v3"));
 print(requests.get("https://www.googleapis.com/calendar/v3/users/me/calendarList"));
+print("os.getcwd() - ",os.getcwd());
 googcal.main();
 
 
