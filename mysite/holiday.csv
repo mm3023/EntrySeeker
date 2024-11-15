@@ -1,0 +1,28 @@
+name,desc,category,begin,end,month,day,rule
+BOXING,Boxing Day,en_CA,,,12,26,0
+CANADA,Canadian Independence Day,en_CA,,,7,1,0
+CANADAOBSERVED,Canadian Independence Day observed,en_CA,,,7,1,8
+CHRISTMAS,Christmas,en_US,,,12,25,0
+CHRISTMAS,Christmas,en_CA,,,12,25,0
+COLUMBUS,Columbus Day,en_US,,,10,2,2
+EASTER,Easter Sunday,en_US,,,0,0,11
+FATHERS,Father's Day,en_US,,,6,3,1
+HALLOWEEN,Halloween,en_US,,,10,31,0
+LABOR,Labor Day,en_US,,,9,1,2
+LABOR,Labor Day,en_CA,,,9,1,2
+MLK,"Martin Luther King, Jr.'s birthday",en_US,1986,,1,3,2
+MEMORIAL,Memorial Day,en_US,1971,,5,-1,2
+MOTHERS,Mother's Day,en_US,,,5,2,1
+NEWYEAR,New Year's Day,en_US,,,1,1,0
+NEWYEAR,New Year's Day,en_CA,,,1,1,0
+THANKSGIVING,U.S. Thanksgiving Day,en_US,,,11,4,5
+THANKSGIVINGCANADA,Canadian Thanksgiving Day,en_CA,,,10,2,2
+USINDEPENDENCE,U.S. Independence Day,en_US,,,7,4,0
+USPRESIDENTS,Abraham Lincoln's and George Washington's birthdays,en_US,1971,,2,3,2
+VALENTINES,Valentine's Day,en_US,,,2,14,0
+VETERANS,Veterans Day,en_US,1938,1971,11,11,0
+VETERANS,Veterans Day,en_US,1971,1978,10,4,1
+VETERANS,Veterans Day,en_US,1978,,11,11,0
+VETERANSUSG,Veterans Day - U.S. government-observed,en_US,,,11,11,9
+VETERANSUSPS,Veterans Day - U.S. post office-observed,en_US,,,11,11,8
+VICTORIA,Victoria Day,en_CA,,,5,24,10
