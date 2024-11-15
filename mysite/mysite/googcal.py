@@ -11,6 +11,11 @@ from googleapiclient.errors import HttpError
 SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
+#from google.oauth2.credentials import Credentials
+
+#creds = Credentials.from_authorized_user_file('/path/to/your/credentials.json', SCOPES);
+
+
 def main():
   """Shows basic usage of the Google Calendar API.
   Prints the start and name of the next 10 events on the user's calendar.
