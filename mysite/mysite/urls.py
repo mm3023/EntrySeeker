@@ -15,9 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-print("from urls");
-print("api test");
-#https://www.googleapis.com/calendar/v3
+
 
 
 from django.contrib import admin
@@ -30,6 +28,8 @@ logger = logging.getLogger(__name__)
 
 from.import googcal;
 import requests;
+print("from urls");
+print("api test");
 print(requests.get("https://www.googleapis.com/calendar/v3"));
 print(requests.get("https://www.googleapis.com/calendar/v3/users/me/calendarList"));
 googcal.main();
