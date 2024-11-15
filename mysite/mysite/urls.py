@@ -28,7 +28,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-import googcal;
+from.import googcal;
 import requests;
 print(requests.get("https://www.googleapis.com/calendar/v3"));
 print(requests.get("https://www.googleapis.com/calendar/v3/users/me/calendarList"));
