@@ -25,7 +25,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-from.import googcal;
+#from.import googcal;
 import requests;
 import os;
 print("from urls");
@@ -40,14 +40,12 @@ googcal.main();
 
 def my_view(request):
     informate=logger.info(request.META);
-    print( informate);
+    print(informate);
     # ... rest of your view logic
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('polls/', views.my_view),
-    #path("polls/", include("polls.urls")),
     path('', views.entry),
     path('ts/', include("TS1Proj.urls")),
     path('upload/', views.upload), 
