@@ -1,3 +1,4 @@
+from __future__ import print_function
 import datetime
 import os.path
 
@@ -6,7 +7,7 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
-from __future__ import print_function
+
 
 creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build('calendar', 'v3', credentials=creds)
