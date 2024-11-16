@@ -9,14 +9,16 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from google.oauth2 import service_account
 
-creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+creds = service_account.Credentials.from_service_account_file(credentials.json, scopes=SCOPES)
+#creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 #creds = service_account.Credentials.from_json_keyfile_name(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 #creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build('calendar', 'v3', credentials=creds)
 
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+#SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 #from google.oauth2.credentials import Credentials
