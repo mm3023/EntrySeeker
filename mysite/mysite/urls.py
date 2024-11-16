@@ -25,7 +25,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-#from.import googcal;
+from.import googcal;
 import requests;
 import os;
 print("from urls");
@@ -33,7 +33,7 @@ print("api test");
 print(requests.get("https://www.googleapis.com/calendar/v3"));
 print(requests.get("https://www.googleapis.com/calendar/v3/users/me/calendarList"));
 print("os.getcwd() - ",os.getcwd());
-#googcal.main();
+googcal.main();
 
 
 
