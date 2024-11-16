@@ -52,12 +52,13 @@ def main():
     with open("token.json", "w") as token:
       token.write(creds.to_json())
   """
+  print("creds -- ",creds)
   try:
     service = build("calendar", "v3", credentials=creds)
 
     # Call the Calendar API
     now = datetime.datetime.utcnow().isoformat() + "Z"  # 'Z' indicates UTC time
-    print("Getting the upcoming 10 events")
+    print("Getting the upcoming events")
     events_result = (
         service.events()
         .list(
