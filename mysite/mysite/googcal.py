@@ -9,8 +9,8 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from google.oauth2 import service_account
 
-#creds = service_account.Credentials.from_json_keyfile_name(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
-creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+creds = service_account.Credentials.from_json_keyfile_name(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+#creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build('calendar', 'v3', credentials=creds)
 
 
