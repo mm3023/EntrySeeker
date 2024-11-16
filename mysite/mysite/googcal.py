@@ -54,8 +54,9 @@ def main():
       token.write(creds.to_json())
   """
   print("creds -- ",creds)
+  print("type(creds) -- ",type(creds))
   #print("calendar id -- ",creds['calendar id'])
-  pandas.DataFrame(creds);
+  #pandas.DataFrame(creds);
   try:
     service = build("calendar", "v3", credentials=creds)
 
