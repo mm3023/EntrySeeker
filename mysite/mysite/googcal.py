@@ -1,6 +1,7 @@
 from __future__ import print_function
 import datetime
 import os.path
+import pandas
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -53,7 +54,8 @@ def main():
       token.write(creds.to_json())
   """
   print("creds -- ",creds)
-  print("calendar id -- ",creds['calendar id'])
+  #print("calendar id -- ",creds['calendar id'])
+  pandas.Dataframe(creds);
   try:
     service = build("calendar", "v3", credentials=creds)
 
