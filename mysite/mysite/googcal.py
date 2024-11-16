@@ -70,7 +70,7 @@ def main():
         .execute()
     )
     events = events_result.get("items", [])
-
+    print("events - ",events)
     if not events:
       print("No upcoming events found.")
       return
