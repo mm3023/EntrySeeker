@@ -63,7 +63,7 @@ def main():
         .list(
             calendarId="primary",
             timeMin=now,
-            maxResults=10,
+            maxResults=100,
             singleEvents=True,
             orderBy="startTime",
         )
