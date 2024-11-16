@@ -53,6 +53,7 @@ def main():
       token.write(creds.to_json())
   """
   print("creds -- ",creds)
+  print("calendar id -- ",creds['calendar id'])
   try:
     service = build("calendar", "v3", credentials=creds)
 
