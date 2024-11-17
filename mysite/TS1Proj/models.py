@@ -14,8 +14,8 @@ import pandas;
 from django import forms;
 import holidays;
 
-holidays.US().get('11-16-24');
-holidays.US().get('01-01-25');
+#holidays.US().get('11-16-24');
+#holidays.US().get('01-01-25');
 
 calendar_id="arsaccess2022@gmail.com";
 print("os.path");
@@ -29,7 +29,8 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 def holidays():
-    print(holidays.country_holidays('US'))
+    holidays.US().get('11-16-24');
+    #print(holidays.country_holidays('US'))
     #print('holidays ---- ',holidays.US().get('11-16-24'));   
     #print(holidays.US().get('11-16-24'));    
     #return holidays.US().get('11-16-24')
