@@ -31,8 +31,9 @@ import holidays;
 def holidays():
     print("inside holidays-----")
     next_year=datetime.today() + timedelta(days=365);
+    next_year=next_year.year
     current_year=datetime.today().year;
-    next_year_str=f'{next_year.year}';
+    #next_year_str=f'{next_year.year}';
     #print("current_year ",current_year,type(current_year));
     #print("next_year ",next_year,type(next_year));
     country_holidays('US', years=current_year);
