@@ -59,6 +59,9 @@ def holidays():
     print('the_holidays ',the_holidays);    
     #print()    
     print("holidays dates ",holidays_dates);
+    print("holidays dates ",holidays_dates[0]);
+    print("holidays dates ",holidays_dates[1]);
+    print("holidays dates ",holidays_dates[2]);
     print('end holidays')
    
     return 0;
