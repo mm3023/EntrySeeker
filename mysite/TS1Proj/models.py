@@ -7,7 +7,7 @@ from googleapiclient.errors import HttpError;
 from google_auth_oauthlib.flow import InstalledAppFlow;
 from holidays import country_holidays
 
-from datetime import datetime, timedelta; 
+from datetime import datetime,date,timedelta; 
 import os.path;
 import requests;
 import json;
@@ -31,9 +31,10 @@ import holidays;
 def holidays():
     print(timedelta(days=10));
     print(datetime.now());
+    print(date.today());
     #end_date = date.today() + timedelta(days=10);
     #print(country_holidays('US').get('2026-01-01'));
-    print(type(country_holidays('US')['2014-01-01':'2014-01-03']));
+    print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
     print(country_holidays('US')['2014-01-01':'2014-01-03']);
     #print(country_holidays('US', years=2024));
     #print(country_holidays('US', years=2025));
