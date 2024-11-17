@@ -29,17 +29,21 @@ import holidays;
 
 
 def holidays():
-    current_year=datetime.today().year;
-    next_year=datetime.today() + timedelta(days=365);
-    end_date = date.today() + timedelta(days=365);
-    next_year.year
     
-    today_str=f'{date.today()}';
-    end_date_str=f'{end_date}';
+    next_year=datetime.today() + timedelta(days=365);
+    #end_date = date.today() + timedelta(days=365);
+    current_year_str=f'{datetime.today().year}';
+    next_year_str=f'{next_year.year}';
+    print("current_year_str ",current_year_str,type(current_year_str));
+    print("next_year_str ",next_year_str,type(next_year_str));
+
+    
+    #today_str=f'{date.today()}';
+    #end_date_str=f'{end_date}';
     #print(end_date);
-    print("year - ",datetime.today().year)
-    print('Today ',today_str);
-    print('end day ',end_date_str);
+    #print("year - ",datetime.today().year)
+    #print('Today ',today_str);
+    #print('end day ',end_date_str);
 
     #print(country_holidays('US', years=)[today_str:end_date_str]);
     #print();
