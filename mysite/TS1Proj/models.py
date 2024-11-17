@@ -49,7 +49,7 @@ def holidays():
         holidays.append(days);
         years.append(current_year);
         
-    print("holidays ",holidays[]);
+    print("holidays ",holidays);
     print('end holidays')
    
     return 0;
