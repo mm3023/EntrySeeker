@@ -12,6 +12,10 @@ import requests;
 import json;
 import pandas;
 from django import forms;
+import holidays;
+
+holidays.us().get('11-16-24');
+holidays.us().get('01-01-25');
 
 calendar_id="arsaccess2022@gmail.com";
 print("os.path");
