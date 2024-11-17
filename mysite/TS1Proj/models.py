@@ -29,6 +29,7 @@ import holidays;
 
 
 def holidays():
+    print("inside holidays-----")
     
     next_year=datetime.today() + timedelta(days=365);
     current_year_str=f'{datetime.today().year}';
@@ -36,7 +37,7 @@ def holidays():
     print("current_year_str ",current_year_str,type(current_year_str));
     print("next_year_str ",next_year_str,type(next_year_str));
     country_holidays('US', years=current_year_str);
-    print(country_holidays('US', years=current_year_str))
+    print("country holidays ",country_holidays('US', years=current_year_str))
 
     
     #today_str=f'{date.today()}';
@@ -50,11 +51,12 @@ def holidays():
     #print();
     
     #print(country_holidays('US').get('2026-01-01'));
-    print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
-    print(country_holidays('US')['2014-01-01':'2014-01-03']);
+    #print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
+    print("string manual inputs - ",country_holidays('US')['2014-01-01':'2014-01-03']);
     #print(country_holidays('US', years=2024));
     #print(country_holidays('US', years=2025));
     country_holidays('US')['2014-01-01':'2014-01-03'];
+    print('end holidays')
    
     return 0;
 holidays();    
