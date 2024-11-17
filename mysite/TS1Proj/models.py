@@ -43,9 +43,11 @@ def holidays():
     end_date = date.today() + timedelta(days=365);
     today_str=f'{date.today()}';
     end_date_str=f'{end_date}';
-    print(end_date);
+    #print(end_date);
     print('Today ',today_str);
     print('end day ',end_date_str);
+
+    print(country_holidays('US')[today_str:end_date_str]);
     #print();
     
     #print(country_holidays('US').get('2026-01-01'));
