@@ -48,7 +48,7 @@ def holidays():
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
     count=0;
     the_holidays=country_holidays('US', years=current_year);
-    holi_days=pandas.dataFrame(the_holidays)
+    holi_days=pandas.DataFrame(the_holidays)
     print('holi_days ',holi_days)
     #json.loads(file);
     """
