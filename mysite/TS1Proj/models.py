@@ -29,17 +29,8 @@ import holidays;
 
 
 def holidays():
-    """
-    print(timedelta(days=10));
-    print(datetime.now());
-    print(type(date.today()));
-    print(str(date.today()));
-    print("date.today() - ",f'date.today()');
-    print(type(f'date.today()'));
-    today_str=f'date.today()';
-    """
-
-    
+    current_year=datetime.today().year;
+    current_year+1=datetime.today().year+timedelta(years=1);
     end_date = date.today() + timedelta(days=365);
     today_str=f'{date.today()}';
     end_date_str=f'{end_date}';
