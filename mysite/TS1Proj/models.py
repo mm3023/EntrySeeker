@@ -30,8 +30,9 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 def holidays():
-    holidays.CountryHoliday('India')
-    holidays.US();
+    country_holidays('US');
+    #holidays.CountryHoliday('India')
+    #holidays.US();
     #print(holidays.country_holidays('US'))
     #print('holidays ---- ',holidays.US().get('11-16-24'));   
     #print(holidays.US().get('11-16-24'));    
