@@ -30,32 +30,14 @@ import holidays;
 
 def holidays():
     print("inside holidays-----")
-    
     next_year=datetime.today() + timedelta(days=365);
     current_year=datetime.today().year;
     next_year_str=f'{next_year.year}';
-    print("current_year ",current_year,type(current_year));
-    print("next_year ",next_year,type(next_year));
-    country_holidays('US', years=current_year);
+    #print("current_year ",current_year,type(current_year));
+    #print("next_year ",next_year,type(next_year));
+    country_holidays('US', years=current_year, next_year);
     print("country holidays ",country_holidays('US', years=current_year))
 
-    
-    #today_str=f'{date.today()}';
-    #end_date_str=f'{end_date}';
-    #print(end_date);
-    #print("year - ",datetime.today().year)
-    #print('Today ',today_str);
-    #print('end day ',end_date_str);
-
-    #print(country_holidays('US', years=)[today_str:end_date_str]);
-    #print();
-    
-    #print(country_holidays('US').get('2026-01-01'));
-    #print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
-    print("string manual inputs - ",country_holidays('US')['2014-01-01':'2014-01-03']);
-    #print(country_holidays('US', years=2024));
-    print("manual year ",country_holidays('US', years=2025));
-    country_holidays('US')['2014-01-01':'2014-01-03'];
     print('end holidays')
    
     return 0;
