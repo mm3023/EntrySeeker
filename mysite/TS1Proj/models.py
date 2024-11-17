@@ -46,17 +46,17 @@ def holidays():
     print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
     count=0;
-    country_holidays('US', years=current_year);
+    the_holidays=country_holidays('US', years=current_year);
     #json.loads(file);
-    
+    """
     for days in country_holidays('US', years=current_year):
         #print("count ",count);
         #print(country_holidays('US', years=current_year));
         holidays_dates.append(days);
         years.append(current_year);
         count=count+1;
-        
-    print(country_holidays('US', years=current_year)[holidays_dates]);    
+    """    
+    print('the_holidays ',the_holidays);    
     #print()    
     print("holidays dates ",holidays_dates);
     print('end holidays')
