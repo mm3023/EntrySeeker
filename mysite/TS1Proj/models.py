@@ -29,7 +29,7 @@ import holidays;
 
 
 def holidays():
-    holidays=[];
+    holidays_dates=[];
     years=[];
     day=[];
     #def populate_arrays():
@@ -46,6 +46,8 @@ def holidays():
     print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
     count=0;
+    json.loads(country_holidays('US', years=current_year));
+    
     for days in country_holidays('US', years=current_year):
         #print("count ",count);
         #print(country_holidays('US', years=current_year));
@@ -53,8 +55,8 @@ def holidays():
         years.append(current_year);
         count=count+1;
         
-        
-    print("holidays ",holidays);
+    #print()    
+    print("holidays dates ",holidays_dates);
     print('end holidays')
    
     return 0;
