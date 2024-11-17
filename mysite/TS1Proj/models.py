@@ -54,7 +54,7 @@ def holidays():
     #print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
     print("string manual inputs - ",country_holidays('US')['2014-01-01':'2014-01-03']);
     #print(country_holidays('US', years=2024));
-    #print(country_holidays('US', years=2025));
+    print("manual year ",country_holidays('US', years=2025));
     country_holidays('US')['2014-01-01':'2014-01-03'];
     print('end holidays')
    
