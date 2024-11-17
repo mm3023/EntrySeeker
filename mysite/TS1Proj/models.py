@@ -37,7 +37,7 @@ def holidays():
     print("current_year ",current_year,type(current_year));
     print("next_year ",next_year,type(next_year));
     country_holidays('US', years=current_year);
-    print("country holidays ",country_holidays('US', years=current_year_str))
+    print("country holidays ",country_holidays('US', years=current_year))
 
     
     #today_str=f'{date.today()}';
