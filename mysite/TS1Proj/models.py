@@ -5,6 +5,7 @@ from google.oauth2.credentials import Credentials;
 from googleapiclient.discovery import build;
 from googleapiclient.errors import HttpError;
 from google_auth_oauthlib.flow import InstalledAppFlow;
+from holidays import country_holidays
 
 from datetime import datetime, timedelta; 
 import os.path;
@@ -29,6 +30,7 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 def holidays():
+    holidays.CountryHoliday('India')
     holidays.US();
     #print(holidays.country_holidays('US'))
     #print('holidays ---- ',holidays.US().get('11-16-24'));   
