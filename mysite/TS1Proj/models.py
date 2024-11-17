@@ -30,16 +30,13 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 def holidays():
-    print(country_holidays('US').get('2026-01-01'));
+    #print(country_holidays('US').get('2026-01-01'));
+    print(type(country_holidays('US')['2014-01-01':'2014-01-03']));
     print(country_holidays('US')['2014-01-01':'2014-01-03']);
-    print(country_holidays('US', years=2024));
-    print(country_holidays('US', years=2025));
-    #holidays.CountryHoliday('India')
-    #holidays.US();
-    #print(holidays.country_holidays('US'))
-    #print('holidays ---- ',holidays.US().get('11-16-24'));   
-    #print(holidays.US().get('11-16-24'));    
-    #return holidays.US().get('11-16-24')
+    #print(country_holidays('US', years=2024));
+    #print(country_holidays('US', years=2025));
+    country_holidays('US')['2014-01-01':'2014-01-03'];
+   
     return 0;
 holidays();    
 
