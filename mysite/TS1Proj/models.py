@@ -30,6 +30,7 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 def holidays():
+    end_date = date.today() + timedelta(days=10);
     #print(country_holidays('US').get('2026-01-01'));
     print(type(country_holidays('US')['2014-01-01':'2014-01-03']));
     print(country_holidays('US')['2014-01-01':'2014-01-03']);
