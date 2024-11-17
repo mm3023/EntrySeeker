@@ -31,7 +31,11 @@ import holidays;
 def holidays():
     print(timedelta(days=10));
     print(datetime.now());
+    print(type(date.today()));
     print(date.today());
+    
+
+    
     #end_date = date.today() + timedelta(days=10);
     #print(country_holidays('US').get('2026-01-01'));
     print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
