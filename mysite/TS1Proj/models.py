@@ -57,11 +57,14 @@ def holidays():
         count=count+1;
     """    
     print('the_holidays ',the_holidays);    
-    #print()    
+    #print() 
+    print("holidays dates type ",type(holidays_dates));
+    '''
     print("holidays dates ",holidays_dates);
     print("holidays dates ",holidays_dates[0]);
     print("holidays dates ",holidays_dates[1]);
     print("holidays dates ",holidays_dates[2]);
+    '''
     print('end holidays')
    
     return 0;
