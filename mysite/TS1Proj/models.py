@@ -45,9 +45,13 @@ def holidays():
     country_holidays('US', years=next_year);
     print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[0])
+    count=0;
     for days in country_holidays('US', years=current_year):
+        print(country_holidays('US', years=current_year)[count]);
         holidays.append(days);
         years.append(current_year);
+        count=count+1;
+        
         
     print("holidays ",holidays);
     print('end holidays')
