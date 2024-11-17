@@ -32,6 +32,7 @@ def holidays():
     print(timedelta(days=10));
     print(datetime.now());
     print(type(date.today()));
+    print(str(date.today()));
     print(date.today());
     
 
