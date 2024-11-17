@@ -47,9 +47,11 @@ def holidays():
     print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
     count=0;
+    country_holidays('US', years=current_year).items();
     the_holidays=country_holidays('US', years=current_year);
-    holi_days=pandas.DataFrame(the_holidays)
-    print('holi_days ',holi_days)
+    the_holidays.items();
+    #holi_days=pandas.DataFrame(the_holidays)
+    #print('holi_days ',holi_days)
     #json.loads(file);
     """
     for days in country_holidays('US', years=current_year):
@@ -63,8 +65,9 @@ def holidays():
     #print() 
     print("holidays dates type ",type(holidays_dates));
     print("holidays dates len ",len(holidays_dates));
-    '''
+    
     print("holidays dates ",holidays_dates);
+    '''
     print("holidays dates ",holidays_dates[0]);
     print("holidays dates ",holidays_dates[1]);
     print("holidays dates ",holidays_dates[2]);
