@@ -44,7 +44,7 @@ def holidays():
     today_str=f'{date.today()}';
     end_date_str=f'{end_date}';
     #print(end_date);
-    print("year - ",datetime.datetime.today().year)
+    print("year - ",datetime.today().year)
     print('Today ',today_str);
     print('end day ',end_date_str);
 
