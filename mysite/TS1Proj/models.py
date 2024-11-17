@@ -29,6 +29,11 @@ import holidays;
 
 
 def holidays():
+    holidays=[];
+    years=[];
+    day=[];
+    #def populate_arrays():
+    
     print("inside holidays-----")
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
@@ -39,7 +44,11 @@ def holidays():
     country_holidays('US', years=current_year);
     country_holidays('US', years=next_year);
     print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
-    print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[1])
+    print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[0])
+    for days in country_holidays('US', years=current_year):
+        holidays.append(days);
+        years.append(current_year);
+        
 
     print('end holidays')
    
