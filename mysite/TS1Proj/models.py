@@ -48,7 +48,7 @@ def holidays():
     print('Today ',today_str);
     print('end day ',end_date_str);
 
-    print(country_holidays('US', years=)[today_str:end_date_str]);
+    #print(country_holidays('US', years=)[today_str:end_date_str]);
     #print();
     
     #print(country_holidays('US').get('2026-01-01'));
