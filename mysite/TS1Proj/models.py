@@ -34,6 +34,7 @@ def holidays():
     print(type(date.today()));
     print(str(date.today()));
     print(date.today());
+    print(type(date.today()));
     
 
     
