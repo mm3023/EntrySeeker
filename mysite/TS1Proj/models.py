@@ -38,7 +38,7 @@ def holidays():
     #print("next_year ",next_year,type(next_year));
     country_holidays('US', years=current_year);
     country_holidays('US', years=next_year);
-    print("country holidays ",country_holidays('US', years=current_year))
+    print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
 
     print('end holidays')
    
