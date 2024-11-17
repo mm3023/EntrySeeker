@@ -30,8 +30,10 @@ import holidays;
 
 def holidays():
     current_year=datetime.today().year;
-    next_year=datetime.today().year+timedelta(days=365);
+    next_year=datetime.today() + timedelta(days=365);
     end_date = date.today() + timedelta(days=365);
+    next_year.year
+    
     today_str=f'{date.today()}';
     end_date_str=f'{end_date}';
     #print(end_date);
