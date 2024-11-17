@@ -35,6 +35,7 @@ def holidays():
     #def populate_arrays():
     
     print("inside holidays-----")
+    #datetime.today()+timedelta(days=1);
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
@@ -47,6 +48,7 @@ def holidays():
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
     count=0;
     the_holidays=country_holidays('US', years=current_year);
+    pandas.dataFRame(the_holidays)
     #json.loads(file);
     """
     for days in country_holidays('US', years=current_year):
