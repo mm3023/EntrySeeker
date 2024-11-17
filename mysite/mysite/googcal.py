@@ -66,7 +66,8 @@ def main():
     events_result = (
         service.events()
         .list(
-            calendarId="primary",
+            calendarId="arsaccess2022@gmail.com",
+            #calendarId="primary",
             timeMin=now,
             maxResults=100,
             singleEvents=True,
