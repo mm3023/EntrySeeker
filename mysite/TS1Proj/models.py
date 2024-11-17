@@ -52,7 +52,7 @@ def holidays():
     for days in country_holidays('US', years=current_year):
         #print("count ",count);
         #print(country_holidays('US', years=current_year));
-        holidays.append(days);
+        holiday_dates.append(days);
         years.append(current_year);
         count=count+1;
         
