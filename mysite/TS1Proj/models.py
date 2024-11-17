@@ -32,11 +32,11 @@ def holidays():
     print("inside holidays-----")
     
     next_year=datetime.today() + timedelta(days=365);
-    current_year_str=f'{datetime.today().year}';
+    current_year=datetime.today().year;
     next_year_str=f'{next_year.year}';
-    print("current_year_str ",current_year_str,type(current_year_str));
-    print("next_year_str ",next_year_str,type(next_year_str));
-    country_holidays('US', years=current_year_str);
+    print("current_year ",current_year,type(current_year));
+    print("next_year ",next_year,type(next_year));
+    country_holidays('US', years=current_year);
     print("country holidays ",country_holidays('US', years=current_year_str))
 
     
