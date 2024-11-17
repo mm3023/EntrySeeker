@@ -15,23 +15,22 @@ import pandas;
 from django import forms;
 import holidays;
 
-#holidays.US().get('11-16-24');
-#holidays.US().get('01-01-25');
 
-calendar_id="arsaccess2022@gmail.com";
-print("os.path");
-print(os.path);
+
+#calendar_id="arsaccess2022@gmail.com";
+#print("os.path");
+#print(os.path);
 
 
 # If modifying these scopes, delete the file token.json.
-SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
+#SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 
 
 def holidays():
-    timedelta(days=10);
-    datetime.now();
+    print(timedelta(days=10));
+    print(datetime.now());
     #end_date = date.today() + timedelta(days=10);
     #print(country_holidays('US').get('2026-01-01'));
     print(type(country_holidays('US')['2014-01-01':'2014-01-03']));
