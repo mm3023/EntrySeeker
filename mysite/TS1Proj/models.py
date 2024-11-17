@@ -29,7 +29,7 @@ SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
 def holidays():
-    holidays.US().get('11-16-24');
+    holidays.US();
     #print(holidays.country_holidays('US'))
     #print('holidays ---- ',holidays.US().get('11-16-24'));   
     #print(holidays.US().get('11-16-24'));    
