@@ -29,16 +29,25 @@ import holidays;
 
 
 def holidays():
+    """
     print(timedelta(days=10));
     print(datetime.now());
     print(type(date.today()));
     print(str(date.today()));
-    print(f'date.today()');
+    print("date.today() - ",f'date.today()');
     print(type(f'date.today()'));
-    
+    today_str=f'date.today()';
+    """
 
     
-    #end_date = date.today() + timedelta(days=10);
+    end_date = date.today() + timedelta(days=365);
+    today_str=f'date.today()';
+    end_date_str;
+    print(end_date);
+    print(today_str);
+    print(end_date_str);
+    #print();
+    
     #print(country_holidays('US').get('2026-01-01'));
     print(type(country_holidays('US')['2024-01-01':'2025-01-03']));
     print(country_holidays('US')['2014-01-01':'2014-01-03']);
