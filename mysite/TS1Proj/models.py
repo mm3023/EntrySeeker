@@ -46,8 +46,8 @@ def holidays():
     print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
     print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
     count=0;
-    file=country_holidays('US', years=current_year);
-    json.loads(file);
+    country_holidays('US', years=current_year);
+    #json.loads(file);
     
     for days in country_holidays('US', years=current_year):
         #print("count ",count);
@@ -56,6 +56,7 @@ def holidays():
         years.append(current_year);
         count=count+1;
         
+    print(country_holidays('US', years=current_year)[holidays_dates]);    
     #print()    
     print("holidays dates ",holidays_dates);
     print('end holidays')
