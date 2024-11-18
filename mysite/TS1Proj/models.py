@@ -54,7 +54,9 @@ def holidays():
     print("country_holidays('US', years=current_year).items() ---------------------- ",country_holidays('US', years=current_year).items())
     print('the_holidays.items() ---------------------',the_holidays.items())
     print('the_holidays.keys() ---------------------',the_holidays.keys())
+    print('the_holidays.keys()[0]---------------------',the_holidays.keys()[0])
     print('the_holidays.values() ---------------------',the_holidays.values())
+     print('the_holidays.values()[0] ---------------------',the_holidays.values()[0])
     print('the_holidays ---------------------',the_holidays)
     
    
