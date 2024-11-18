@@ -62,11 +62,13 @@ def holidays():
   
        
   
-    holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);   
-    holiday_doc2=pandas.read_csv('new_holidays.csv');      
-      
+    holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);  
+    holiday_doc2=pandas.read_csv('new_holidays.csv');   
+    holiday_doc3=pandas.read_csv('/TS1Proj/geminiholiday.csv');      
+    print(synthetic_cal);   
     print(holiday_doc1); 
     print(holiday_doc2); 
+    print(holiday_doc3);    
     #print(h2); 
     #print(h2);    
     print('end holidays')
