@@ -51,15 +51,15 @@ def holidays():
         count=0;
         while count < len(country_holidays('US', years=current_year).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
-              print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
+              #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
-              print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
+              #print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
               year.append(current_year);
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-    synthetic_cal=pandas.DataFrame([[holiday_name,year,date]]);   
-    synthetic_cal_2manybrackets=pandas.DataFrame([[holiday_name],[year],[date]]);      
+    synthetic_cal=pandas.DataFrame([holiday_name,year,date], axis=2);   
+    synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
   
        
   
