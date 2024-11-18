@@ -46,9 +46,16 @@ def holidays():
     _10_days_from_now=datetime.today() + timedelta(days=10);
     print(_10_days_from_now)   
     #print(datetime.now().day - timedelta(days=10))   
-    holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');   
-    holiday_doc.loc[holiday_doc['Month']>datetime.now().month];
-    print(holiday_doc.loc[holiday_doc['Month']>datetime.now().month])   
+    holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
+    '''   
+    holidays_upcomming=holiday_doc.loc[holiday_doc['Month']>datetime.now().month];
+    core_holidays_this_month=holiday_doc.loc[holiday_doc['Month']==datetime.now().month];   
+    holiday_doc.loc[holiday_doc['Day']>datetime.now().day];     
+    '''
+       
+
+
+print(holiday_doc.loc[holiday_doc['Month']>datetime.now().month])   
   
 
 
@@ -56,9 +63,10 @@ def holidays():
     
     
     holiday_name=[];
-    #year=[];
+    Month=[];
+    Day=[];
     date=[];
-    data={'holiday_name':holiday_name,'date':date}
+    data={'Holiday_Name':holiday_name,'date':date}
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
@@ -73,8 +81,10 @@ def holidays():
               #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
               print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
-               
-              #print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
+              day_num=list(country_holidays('US', years=_year_).keys().day;
+              month_num=list(country_holidays('US', years=_year_).keys().month; 
+              print('day = ',day_num,||,'month = ',month_num); 
+              print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
               #year.append(_year_);
               count=count+1;
     #loop_holiday_api(current_year);
