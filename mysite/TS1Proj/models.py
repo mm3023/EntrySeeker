@@ -66,7 +66,7 @@ def holidays():
     Month=[];
     Day=[];
     date=[];
-    data={'Holiday_Name':holiday_name,'Month':Month,'Day':Day}
+    data={'Holiday Name':holiday_name,'Month':Month,'Day':Day}
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
