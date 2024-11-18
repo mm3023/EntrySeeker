@@ -58,9 +58,11 @@ def holidays():
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-   
+       
+    holiday_doc=open(holidays.txt, RW);
     print('os.getcwd() - ',os.getcwd());   
     print('os.listdir() - ',os.listdir());
+    print(holiday_doc);   
     print('end holidays')
    
     return 0;
