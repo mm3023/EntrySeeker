@@ -79,7 +79,7 @@ def holidays():
         while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
               #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
-              date.append(list(country_holidays('US', years=_year_).keys())[count]);
+              #date.append(list(country_holidays('US', years=_year_).keys())[count]);
               #print('key ',list(country_holidays('US', years=_year_).keys())[count]) 
               #print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
               #'key type',list(country_holidays('US', years=_year_).keys())[count] 
