@@ -39,9 +39,9 @@ def holidays():
     
     
     holiday_name=[];
-    year=[];
+    #year=[];
     date=[];
-    data={'holiday_name':holiday_name, 'year':year,'date':date}
+    data={'holiday_name':holiday_name,'date':date}
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
@@ -49,36 +49,35 @@ def holidays():
     the_holidays.items();
     def loop_holiday_api(_year_):
         count=0;
-        while count < len(country_holidays('US', years=current_year).keys()):
+        while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
               #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
+              print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
+               
               #print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
-              year.append(current_year);
+              #year.append(_year_);
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-    synthetic_cal=pandas.DataFrame([holiday_name,year,date]);  
+    #synthetic_cal=pandas.DataFrame([holiday_name,year,date]);  
     synthetic_cal2=pandas.DataFrame(data);      
-    synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
+    #synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
+
+       
   
        
   
-    holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);  
-    holiday_doc2=pandas.read_csv('new_holidays.csv'); 
-    #print(os.getcwd());
-    #os.chdir('TS1Proj');
-    #print(os.getcwd());   
-    #holiday_doc3=pandas.read_csv('/TS1Proj/geminiholidays.csv');    
+    #holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);  
+    #holiday_doc2=pandas.read_csv('new_holidays.csv'); 
+    
     holiday_doc3=pandas.read_csv('TS1Proj/geminiholidays.csv');      
-    print(synthetic_cal);  
+
+       
+    #rint(synthetic_cal);  
     print(synthetic_cal2);   
-    print(synthetic_cal_2manybrackets);   
-    #print(holiday_doc1); 
-    #print(holiday_doc2); 
+    #print(synthetic_cal_2manybrackets);   
     print(holiday_doc3);    
-    #print(h2); 
-    #print(h2);    
     print('end holidays')
    
     return 0;
