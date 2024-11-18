@@ -62,7 +62,7 @@ def holidays():
     holiday_doc=open('holiday.csv', 'r');
     print('os.getcwd() - ',os.getcwd());   
     print('os.listdir() - ',os.listdir());
-    print(holiday_doc);   
+    print(holiday_doc.read());   
     print('end holidays')
    
     return 0;
