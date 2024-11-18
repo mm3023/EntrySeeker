@@ -15,7 +15,7 @@ import pandas;
 from django import forms;
 import holidays;
 
-10_days_from_now=datetime.today() + timedelta(days=10);
+_10_days_from_now=datetime.today() + timedelta(days=10);
 holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');
 
 
@@ -44,7 +44,7 @@ def holidays():
     print(datetime.now().month)
     print(datetime.now().day)   
     10_days_from_now=datetime.today() + timedelta(days=10);
-    print(10_days_from_now)   
+    print(_10_days_from_now)   
     print(datetime.now().day-timedelta(days=10))   
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');   
     print(holiday_doc);   
