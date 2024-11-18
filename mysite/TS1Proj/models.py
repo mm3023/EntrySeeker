@@ -76,7 +76,9 @@ def holidays():
            Month.append(month);
            Day.append(day);
            
-    synthetic_cal2=pandas.DataFrame(data);      
+    synthetic_cal2=pandas.DataFrame(data);  
+    print('current_month ',current_month)
+    """
     full_holiday_set = pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
     holidays_all_upcomming_months=full_holiday_set[full_holiday_set [Month]>current_month];    
     holidays_upcomming_months=full_holiday_set[full_holiday_set [Month]==current_month+1]; 
@@ -90,7 +92,7 @@ def holidays():
     print('holiday_today ',holiday_today);
     print('next_holidays_this_month ',next_holidays_this_month);
     print('holidays_this_month ',holidays_this_month);   
-       
+    """   
     #print(holiday_doc);  
     #print(synthetic_cal2);
     #print( full_holiday_set);   
