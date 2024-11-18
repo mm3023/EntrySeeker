@@ -39,29 +39,15 @@ holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');
 
 
 def holidays():
+    current_month=datetime.now().month;
+    current_day=datetime.now().day;   
        
     print("inside holidays-----");
-    print(datetime.now().month)
-    print(datetime.now().day)   
+    #print(datetime.now().month)
+    #print(datetime.now().day)   
     _10_days_from_now=datetime.today() + timedelta(days=10);
-    #print(_10_days_from_now)   
-    #print(datetime.now().day - timedelta(days=10))   
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
-    '''   
-    holidays_upcomming=holiday_doc.loc[holiday_doc['Month']>datetime.now().month];
-    core_holidays_this_month=holiday_doc.loc[holiday_doc['Month']==datetime.now().month];   
-    holiday_doc.loc[holiday_doc['Day']>datetime.now().day];     
-    '''
-       
-
-
-    #print(holiday_doc.loc[holiday_doc['Month']>datetime.now().month])   
-  
-
-
-    
-    
-    
+        
     holiday_name=[];
     Month=[];
     Day=[];
@@ -72,26 +58,16 @@ def holidays():
     current_year=datetime.today().year;
     the_holidays=country_holidays('US', years=current_year);
     
-    #the_holidays.items();
-   
+  
     def loop_holiday_api(_year_):
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
               #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
-              #print('key ',list(country_holidays('US', years=_year_).keys())[count]) 
-              #print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
-              #'key type',list(country_holidays('US', years=_year_).keys())[count] 
-              #day_num=list(country_holidays('US', years=_year_).keys()).day
-              #month_num=list(country_holidays('US', years=_year_).keys()).month 
-              #print('day = ',day_num,'||','month = ',month_num); 
-              #print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
-              #year.append(_year_);
               count=count+1;
-    #loop_holiday_api(current_year);
+    
     loop_holiday_api(next_year);
-    #len(date);
     for elements in date:
            print('type = ',type(elements),'--' ,elements);
            str_elements=str(elements)[5:];
@@ -99,23 +75,25 @@ def holidays():
            day=str_elements[3:]
            Month.append(month);
            Day.append(day);
-           print('type = ',type(str_elements),'--' ,str_elements);
-           print('Mnth = ',month);
-           print('Dy = ',day);
+           
     synthetic_cal2=pandas.DataFrame(data);      
-    #full_holiday_set=synthetic_cal2.append(holiday_doc, ignore_index=True);  
-    full_holiday_set = pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True)   
-
+    full_holiday_set = pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
+    holidays_all_upcomming_months=full_holiday_set[full_holiday_set [Month]>current_month];    
+    holidays_upcomming_months=full_holiday_set[full_holiday_set [Month]=current_month+1]; 
+    #holidays_soon_next_month=holidays_upcomming_months[holidays_upcomming_months[]];   
+    holidays_this_month=full_holiday_set[full_holiday_set [Month]=current_month];
+    next_holidays_this_month=holidays_this_month[holidays_this_month[Day]>current_day];   
+    holiday_today=holidays_this_month[holidays_this_month[Day]=current_day]; 
+    print('holidays_all_upcomming_months ',holidays_all_upcomming_months);    
+    print('holidays_upcomming_months ',holidays_upcomming_months); 
        
-  
+    print('holiday_today ',holiday_today);
+    print('next_holidays_this_month ',next_holidays_this_month);
+    print('holidays_this_month ',holidays_this_month);   
        
-  
-  
-
-       
-    print(holiday_doc);  
-    print(synthetic_cal2);
-    print( full_holiday_set);   
+    #print(holiday_doc);  
+    #print(synthetic_cal2);
+    #print( full_holiday_set);   
     print('end holidays')
    
     return 0;
