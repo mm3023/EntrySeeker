@@ -91,7 +91,9 @@ def holidays():
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-   
+    len(date);
+    for elements in date:
+           print('type = ',type(elements),'--' ,elements);
   
     synthetic_cal2=pandas.DataFrame(data);      
        
