@@ -58,7 +58,7 @@ def holidays():
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-    synthetic_cal=pandas.DataFrame([holiday_name,year,date], axis=1);  
+    synthetic_cal=pandas.DataFrame([holiday_name,year,date]);  
     synthetic_cal2=pandas.DataFrame(data);      
     synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
   
