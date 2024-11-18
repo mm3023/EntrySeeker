@@ -62,10 +62,14 @@ def holidays():
     #holiday_doc=open('holiday.csv', 'r');
     #print('os.getcwd() - ',os.getcwd());   
     #print('os.listdir() - ',os.listdir());
-    h1=pandas.DataFrame(open('holiday.csv', 'r').read()); 
-    h2=pandas.DataFrame(open('new_holidays.csv', 'r').read())   
+    #h1=pandas.DataFrame(open('holiday.csv', 'r').read()); 
+    #h2=pandas.DataFrame(open('new_holidays.csv', 'r').read()) 
+       
     holiday_doc1=open('holiday.csv', 'r');  
-    holiday_doc2=open('new_holidays.csv', 'r');     
+    holiday_doc2=open('new_holidays.csv', 'r');  
+    h1=pandas.DataFrame(holiday_doc1.read());
+    h2=pandas.DataFrame(holiday_doc2.read())   
+    holiday_doc2.read()   
     print(holiday_doc1.read()); 
     print(holiday_doc2.read()); 
     print(h2); 
