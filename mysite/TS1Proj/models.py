@@ -58,7 +58,8 @@ def holidays():
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-    synthetic_cal=pandas.DataFrame([holiday_name,year,date], axis=2);   
+    synthetic_cal=pandas.DataFrame([holiday_name,year,date], axis=1);  
+    synthetic_cal2=pandas.DataFrame(data);      
     synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
   
        
@@ -71,6 +72,7 @@ def holidays():
     #holiday_doc3=pandas.read_csv('/TS1Proj/geminiholidays.csv');    
     holiday_doc3=pandas.read_csv('TS1Proj/geminiholidays.csv');      
     print(synthetic_cal);  
+    print(synthetic_cal2);   
     print(synthetic_cal_2manybrackets);   
     #print(holiday_doc1); 
     #print(holiday_doc2); 
