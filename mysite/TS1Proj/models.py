@@ -41,7 +41,7 @@ def holidays():
     holiday_name=[];
     year=[];
     date=[];
-    data=[holiday_name, year,date]
+    data={'holiday_name':holiday_name, 'year':year,'date':date}
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
