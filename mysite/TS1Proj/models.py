@@ -44,7 +44,7 @@ def holidays():
     print(datetime.now().month)
     print(datetime.now().day)   
     _10_days_from_now=datetime.today() + timedelta(days=10);
-    print(_10_days_from_now)   
+    #print(_10_days_from_now)   
     #print(datetime.now().day - timedelta(days=10))   
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
     '''   
@@ -55,7 +55,7 @@ def holidays():
        
 
 
-    print(holiday_doc.loc[holiday_doc['Month']>datetime.now().month])   
+    #print(holiday_doc.loc[holiday_doc['Month']>datetime.now().month])   
   
 
 
@@ -78,10 +78,10 @@ def holidays():
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
-              print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
+              #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
-              print('key ',list(country_holidays('US', years=_year_).keys())[count]) 
-              print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
+              #print('key ',list(country_holidays('US', years=_year_).keys())[count]) 
+              #print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
               #'key type',list(country_holidays('US', years=_year_).keys())[count] 
               #day_num=list(country_holidays('US', years=_year_).keys()).day
               #month_num=list(country_holidays('US', years=_year_).keys()).month 
@@ -113,7 +113,8 @@ def holidays():
 
        
     print(holiday_doc);  
-    print(synthetic_cal2);   
+    print(synthetic_cal2);
+    print( full_holiday_set);   
     print('end holidays')
    
     return 0;
