@@ -62,7 +62,7 @@ def holidays():
   
        
   
-    holiday_doc1=pandas.read_csv('holiday.csv');   
+    holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);   
     holiday_doc2=pandas.read_csv('new_holidays.csv');      
       
     print(holiday_doc1); 
