@@ -59,13 +59,17 @@ def holidays():
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
        
-    holiday_doc=open('holiday.csv', 'r');
+    #holiday_doc=open('holiday.csv', 'r');
     #print('os.getcwd() - ',os.getcwd());   
     #print('os.listdir() - ',os.listdir());
+    h1=pandas.DataFrame(open('holiday.csv', 'r').read()); 
+    h2=pandas.DataFrame(open('new_holidays.csv', 'r').read())   
     holiday_doc1=open('holiday.csv', 'r');  
     holiday_doc2=open('new_holidays.csv', 'r');     
     print(holiday_doc1.read()); 
-    print(holiday_doc2.read());   
+    print(holiday_doc2.read()); 
+    print(h2); 
+    print(h2);    
     print('end holidays')
    
     return 0;
