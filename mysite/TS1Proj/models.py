@@ -47,7 +47,7 @@ def holidays():
     print(_10_days_from_now)   
     #print(datetime.now().day - timedelta(days=10))   
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');   
-    print(holiday_doc);   
+     
   
 
 
@@ -63,7 +63,7 @@ def holidays():
     current_year=datetime.today().year;
     the_holidays=country_holidays('US', years=current_year);
     
-    the_holidays.items();
+    #the_holidays.items();
    
     def loop_holiday_api(_year_):
         count=0;
@@ -79,24 +79,19 @@ def holidays():
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
    
-    #synthetic_cal=pandas.DataFrame([holiday_name,year,date]);  
+  
     synthetic_cal2=pandas.DataFrame(data);      
-    #synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
+       
 
        
   
        
   
-    #holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);  
-    #holiday_doc2=pandas.read_csv('new_holidays.csv'); 
-    
-    #holiday_doc3=pandas.read_csv('TS1Proj/geminiholidays.csv');      
+  
 
        
-    #rint(synthetic_cal);  
+    print(holiday_doc);  
     print(synthetic_cal2);   
-    #print(synthetic_cal_2manybrackets);   
-    #print(holiday_doc3);    
     print('end holidays')
    
     return 0;
