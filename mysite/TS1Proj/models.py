@@ -51,32 +51,12 @@ def holidays():
     
     the_holidays=country_holidays('US', years=current_year);
     the_holidays.items();
-    print("country_holidays('US', years=current_year).items() ",country_holidays('US', years=current_year).items())
-    print('the_holidays ',the_holidays)
-    print('the_holidays ',the_holidays)
+    print("country_holidays('US', years=current_year).items() ---------------------- ",country_holidays('US', years=current_year).items())
+    print('the_holidays.items() ---------------------',the_holidays.items())
+    print('the_holidays ---------------------',the_holidays)
     
-    #holi_days=pandas.DataFrame(the_holidays)
-    #print('holi_days ',holi_days)
-    #json.loads(file);
-    """
-    for days in country_holidays('US', years=current_year):
-        #print("count ",count);
-        #print(country_holidays('US', years=current_year));
-        holidays_dates.append(days);
-        years.append(current_year);
-        count=count+1;
-    """    
-    #print('the_holidays ',the_holidays);    
-    #print() 
-    #print("holidays dates type ",type(holidays_dates));
-    #print("holidays dates len ",len(holidays_dates));
-    
-    #print("holidays dates ",holidays_dates);
-    '''
-    print("holidays dates ",holidays_dates[0]);
-    print("holidays dates ",holidays_dates[1]);
-    print("holidays dates ",holidays_dates[2]);
-    '''
+   
+   
     print('end holidays')
    
     return 0;
