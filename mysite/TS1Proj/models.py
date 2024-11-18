@@ -66,7 +66,7 @@ def holidays():
     Month=[];
     Day=[];
     date=[];
-    data={'Holiday_Name':holiday_name,'date':date}
+    data={'Holiday_Name':holiday_name,'date':date,'Month':Month,'Day':Day}
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
@@ -95,11 +95,13 @@ def holidays():
     for elements in date:
            print('type = ',type(elements),'--' ,elements);
            str_elements=str(elements)[5:];
-           Month=str_elements[2]
-           Day=str_elements[2]
+           month=str_elements[:3]
+           day=str_elements[3:]
+           Month.append(month);
+           Day.append(day);
            print('type = ',type(str_elements),'--' ,str_elements);
-           print('Mnth = ',Month);
-           print('Day = ',Day);
+           print('Mnth = ',month);
+           print('Dy = ',day);
     synthetic_cal2=pandas.DataFrame(data);      
        
 
