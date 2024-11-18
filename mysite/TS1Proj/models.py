@@ -31,33 +31,10 @@ import holidays;
 def holidays():
        
     print("inside holidays-----")
-    
-    #datetime.today()+timedelta(days=1);
-    """
-    next_year=datetime.today() + timedelta(days=365);
-    next_year=next_year.year
-    current_year=datetime.today().year;
-    """
-    #next_year_str=f'{next_year.year}';
-    #print("current_year ",current_year,type(current_year));
-    #print("next_year ",next_year,type(next_year));
-    #country_holidays('US', years=current_year);
-    #country_holidays('US', years=next_year);
-    #print("country holidays  ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year))
-    #print("country holidays  subsribe ",type(country_holidays('US', years=current_year)) ,country_holidays('US', years=current_year)[5])
-    #count=0;
-    #country_holidays('US', years=current_year).items();
-    #the_holidays=country_holidays('US', years=current_year);
-    #the_holidays.items();
-    """
-    print("country_holidays('US', years=current_year).items() ---------------------- ",country_holidays('US', years=current_year).items())
-    print('the_holidays.items() ---------------------',the_holidays.items())
-    print('the_holidays.keys() ---------------------',the_holidays.keys())
-    print('list the_holidays.keys()[0]---------------------',list(the_holidays.keys())[0])
-    print(' the_holidays.values() ---------------------',the_holidays.values())
-    print('list the_holidays.values()[0] ---------------------',list(the_holidays.values())[0])
-    print('the_holidays ---------------------',the_holidays)
-    """
+       
+  
+
+
     
     
     
@@ -79,10 +56,11 @@ def holidays():
               print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
               year.append(current_year);
               count=count+1;
-    loop_holiday_api(current_year);
+    #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
    
-   
+    print('os.getcwd() - ',os.getcwd());   
+    print('os.listdir() - ',os.listdir());
     print('end holidays')
    
     return 0;
