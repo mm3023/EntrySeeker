@@ -59,19 +59,12 @@ def holidays():
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
        
-    #holiday_doc=open('holiday.csv', 'r');
-    #print('os.getcwd() - ',os.getcwd());   
-    #print('os.listdir() - ',os.listdir());
-    #h1=pandas.DataFrame(open('holiday.csv', 'r').read()); 
-    #h2=pandas.DataFrame(open('new_holidays.csv', 'r').read()) 
+  
        
-    #holiday_doc1=open('holiday.csv', 'r');  
-    #holiday_doc2=open('new_holidays.csv', 'r'); 
+  
     holiday_doc1=pandas.read_csv('holiday.csv');   
-    holiday_doc2=pandas.read_csv('holiday.csv');      
-    #h1=pandas.DataFrame(holiday_doc1.read());
-    #h2=pandas.DataFrame(holiday_doc2.read())   
-    #holiday_doc2.read()   
+    holiday_doc2=pandas.read_csv('new_holidays.csv');      
+      
     print(holiday_doc1); 
     print(holiday_doc2); 
     #print(h2); 
