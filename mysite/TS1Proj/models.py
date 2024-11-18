@@ -59,7 +59,7 @@ def holidays():
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
        
-    holiday_doc=open('holiday.csv', 'rw');
+    holiday_doc=open('holiday.csv', 'r+');
     print('os.getcwd() - ',os.getcwd());   
     print('os.listdir() - ',os.listdir());
     print(holiday_doc);   
