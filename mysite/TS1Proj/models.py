@@ -15,14 +15,24 @@ import pandas;
 from django import forms;
 import holidays;
 
+10_days_from_now=datetime.today() + timedelta(days=10);
+holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');
+
+
+#print(holiday_doc);
+
+
+
+
+
+
+
+
+
 
 
 #calendar_id="arsaccess2022@gmail.com";
-#print("os.path");
-#print(os.path);
-
-
-# If modifying these scopes, delete the file token.json.
+#If modifying these scopes, delete the file token.json.
 #SCOPES = ["https://www.googleapis.com/auth/calendar.readonly"]
 
 
@@ -30,8 +40,14 @@ import holidays;
 
 def holidays():
        
-    print("inside holidays-----")
-       
+    print("inside holidays-----");
+    print(datetime.now().month)
+    print(datetime.now().day)   
+    10_days_from_now=datetime.today() + timedelta(days=10);
+    print(10_days_from_now)   
+    print(datetime.now().day-timedelta(days=10))   
+    holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');   
+    print(holiday_doc);   
   
 
 
@@ -46,7 +62,9 @@ def holidays():
     next_year=next_year.year
     current_year=datetime.today().year;
     the_holidays=country_holidays('US', years=current_year);
+    
     the_holidays.items();
+   
     def loop_holiday_api(_year_):
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
@@ -60,8 +78,9 @@ def holidays():
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
+   
     #synthetic_cal=pandas.DataFrame([holiday_name,year,date]);  
-    synthetic_cal2=pandas.DataFrame(data);      
+    #synthetic_cal2=pandas.DataFrame(data);      
     #synthetic_cal_2manybrackets=pandas.DataFrame([holiday_name,year,date]);      
 
        
@@ -71,13 +90,13 @@ def holidays():
     #holiday_doc1=pandas.read_csv('holiday.csv').drop(['category','begin','end','rule'], axis=1);  
     #holiday_doc2=pandas.read_csv('new_holidays.csv'); 
     
-    holiday_doc3=pandas.read_csv('TS1Proj/geminiholidays.csv');      
+    #holiday_doc3=pandas.read_csv('TS1Proj/geminiholidays.csv');      
 
        
     #rint(synthetic_cal);  
     print(synthetic_cal2);   
     #print(synthetic_cal_2manybrackets);   
-    print(holiday_doc3);    
+    #print(holiday_doc3);    
     print('end holidays')
    
     return 0;
