@@ -94,7 +94,8 @@ def holidays():
     len(date);
     for elements in date:
            print('type = ',type(elements),'--' ,elements);
-  
+           str_element=str(element)
+           print('type = ',type(str_elements),'--' ,str_elements);
     synthetic_cal2=pandas.DataFrame(data);      
        
 
