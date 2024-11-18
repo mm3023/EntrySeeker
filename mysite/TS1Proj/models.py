@@ -41,7 +41,7 @@ def holidays():
     holiday_name=[];
     year=[];
     date=[];
-    
+    data=[holiday_name, year,date]
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
     current_year=datetime.today().year;
@@ -58,7 +58,7 @@ def holidays():
               count=count+1;
     #loop_holiday_api(current_year);
     loop_holiday_api(next_year);
-    synthetic_cal=pandas.DataFrame(data=[holiday_name,year,date]).transpose();   
+    synthetic_cal=pandas.DataFrame(data);   
   
        
   
