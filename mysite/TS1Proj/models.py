@@ -78,14 +78,15 @@ def holidays():
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
-              #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
+              print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
+              print('key ',list(country_holidays('US', years=_year_).keys())[count]) 
               print('key type',type(list(country_holidays('US', years=_year_).keys())[count]))
               #'key type',list(country_holidays('US', years=_year_).keys())[count] 
-              day_num=list(country_holidays('US', years=_year_).keys()).day
-              month_num=list(country_holidays('US', years=_year_).keys()).month 
-              print('day = ',day_num,'||','month = ',month_num); 
-              print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
+              #day_num=list(country_holidays('US', years=_year_).keys()).day
+              #month_num=list(country_holidays('US', years=_year_).keys()).month 
+              #print('day = ',day_num,'||','month = ',month_num); 
+              #print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
               #year.append(_year_);
               count=count+1;
     #loop_holiday_api(current_year);
