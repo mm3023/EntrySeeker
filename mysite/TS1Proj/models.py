@@ -104,7 +104,7 @@ def holidays():
            print('Dy = ',day);
     synthetic_cal2=pandas.DataFrame(data);      
     #full_holiday_set=synthetic_cal2.append(holiday_doc, ignore_index=True);  
-    full_holiday_set = pd.concat([synthetic_cal2, holiday_doc], ignore_index=True)   
+    full_holiday_set = pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True)   
 
        
   
