@@ -95,7 +95,7 @@ def holidays():
     for elements in date:
            print('type = ',type(elements),'--' ,elements);
            str_elements=str(elements)[5:];
-           month=str_elements[:3]
+           month=str_elements[:2]
            day=str_elements[3:]
            Month.append(month);
            Day.append(day);
