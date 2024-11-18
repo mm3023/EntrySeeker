@@ -58,15 +58,17 @@ def holidays():
     print(' the_holidays.values() ---------------------',the_holidays.values())
     print('list the_holidays.values()[0] ---------------------',list(the_holidays.values())[0])
     print('the_holidays ---------------------',the_holidays)
-    
-    count=0;
-    while count < len(country_holidays('US', years=current_year).keys()):
-        holiday_name.append(list(country_holidays('US', years=current_year).values())[count]);
-        print('holiday name = ',list(country_holidays('US', years=current_year).values())[count]);
-        date.append(list(country_holidays('US', years=current_year).keys())[count]);
-        print('date = ',list(country_holidays('US', years=current_year).keys())[count]);
-        year.append(current_year);
+
+    def loop_holiday_api(_year_):
+        count=0;
+        while count < len(country_holidays('US', years=current_year).keys()):
+              holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
+              print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
+              date.append(list(country_holidays('US', years=_year_).keys())[count]);
+              print('date = ',list(country_holidays('US', years=_year_).keys())[count]);
+              year.append(current_year);
         count=count+1;
+    loop_holiday_api(current_year)
     """
     count=0;
     
