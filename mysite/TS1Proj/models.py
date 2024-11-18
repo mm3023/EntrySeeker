@@ -61,10 +61,10 @@ def holidays():
     
     count=0;
     while count < len(country_holidays('US', years=current_year).keys()):
-        holiday_name.append(country_holidays('US', years=current_year).keys()[count]);
-        print('holiday name = ',country_holidays('US', years=current_year).keys()[count]);
-        date.append(country_holidays('US', years=current_year).values()[count]);
-        print('date = ',country_holidays('US', years=current_year).values()[count]);
+        holiday_name.append(list(country_holidays('US', years=current_year).keys())[count]);
+        print('holiday name = ',list(country_holidays('US', years=current_year).keys())[count]);
+        date.append(list(country_holidays('US', years=current_year).values())[count]);
+        print('date = ',list(country_holidays('US', years=current_year).values())[count]);
         year.append(current_year);
     """
     count=0;
