@@ -47,8 +47,8 @@ def holidays():
     print(_10_days_from_now)   
     #print(datetime.now().day - timedelta(days=10))   
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');   
-    holiday_doc.loc[holiday_doc[Month]>datetime.now().month];
-    print(holiday_doc.loc[holiday_doc[Month]>datetime.now().month])   
+    holiday_doc.loc[holiday_doc['Month']>datetime.now().month];
+    print(holiday_doc.loc[holiday_doc['Month']>datetime.now().month])   
   
 
 
