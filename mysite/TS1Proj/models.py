@@ -64,7 +64,7 @@ def holidays_Calendar():
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date;
-    full_holiday_set=full_holiday_set.drop_duplicates();
+    #full_holiday_set=full_holiday_set.drop_duplicates();
     return full_holiday_set;
 
 def Holiday_selector():
