@@ -83,10 +83,10 @@ def Holiday_selector():
     calendar_dates=calendar['reconstructed_date'];
     print(holidays_Calendar());
     print('Today = ',_today_);
-    for days in calendar_dates:
+    for day in calendar_dates:
         month=day[:2];
-        the_day=day[:2];
-        print('month = ',day[:2],' day = ',days[3:],'','formed day = ',days,' today = ',_today_,days==_today_);
+        the_day=day[3:];
+        print('month = ',month,' day = ',the_day,'','formed day = ',day,' today = ',_today_,day==_today_);
      
 
 
