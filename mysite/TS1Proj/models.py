@@ -93,11 +93,11 @@ def holidays():
             print(alteredDigitMonth);
             print(alteredDigitMonth[:1]);
             print('0'+alteredDigitMonth[:1]);
-        if len(str(alteredDigitDay))==1:
+        if len(alteredDigitDay)==1:
             print(alteredDigitDay);  
             print(alteredDigitDay[:1]);
             print('0'+alteredDigitMonth[:1]);
-        reconstructed_date.append(str(alteredDigitMonth)+"-"+str(alteredDigitDay));
+        reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         #corrected_date_Month=str(alteredDigitMonth[count_a])
         #corrected_date_Day=str(alteredDigitDay[count_a]) 
         #reconstructed_date.append(+"-"+));
