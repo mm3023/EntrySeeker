@@ -76,17 +76,14 @@ def Holiday_selector():
     next_month=str(int(this_month)+1);
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
-    print('calendar_dates ',calendar_dates)
-    print('len calendar_dates ',len(calendar_dates))
+    #print('calendar_dates ',calendar_dates)
+    #print('len calendar_dates ',len(calendar_dates))
     counter=0;
-    
-    
     while counter < len(calendar_dates):
-        
        #month=calendar_dates[counter][:2] 
-       #print('counter = ',counter,len(calendar_dates)); 
-       #counter=counter+1; 
-      
+       print('counter = ',counter,len(calendar_dates)); 
+       print('_today_ = ',_today_)
+       
        month=calendar_dates[counter][:2];
        the_day=calendar_dates[counter][3:];
        counter=counter+1;
