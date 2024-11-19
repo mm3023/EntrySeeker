@@ -24,7 +24,7 @@ import holidays;
 
 
 
-def holidays():
+def holidays_Calendar():
     current_month=datetime.now().month;
     current_day=datetime.now().day;   
        
@@ -71,7 +71,7 @@ def holidays():
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
     return full_holiday_set;
-print(holidays());    
+print(holidays_Calendar());    
 
 
 
