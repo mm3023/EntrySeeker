@@ -83,6 +83,7 @@ def Holiday_selector():
     
     while counter < len(calendar_dates):
         
+       month=calendar_dates[counter][:2] 
        print('counter = ',counter,len(calendar_dates)); 
        counter=counter+1; 
     '''   
