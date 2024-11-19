@@ -70,7 +70,6 @@ def holidays():
     
     loop_holiday_api(next_year);
     for elements in date:
-           #print('type = ',type(elements),'--' ,elements);
            str_elements=str(elements)[5:];
            month=str_elements[:2]
            day=str_elements[3:]
@@ -78,13 +77,9 @@ def holidays():
            Day.append(day);
            
     synthetic_cal2=pandas.DataFrame(data);  
-    #print('current_month ',current_month)
     full_holiday_set=pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
     count_a=0;
     while count_a<len(full_holiday_set['Month']):
-        #for stuff in full_holiday_set['Month']:
-        #print('reconstructed_date ',reconstructed_date);
-        #print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
         alteredDigitMonth=str(full_holiday_set['Month'][count_a]);
         alteredDigitDay=str(full_holiday_set['Day'][count_a]);
         if len(alteredDigitMonth)==1:
@@ -98,12 +93,6 @@ def holidays():
             alteredDigitDay='0'+alteredDigitDay
             print(alteredDigitDay);
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
-        #corrected_date_Month=str(alteredDigitMonth[count_a])
-        #corrected_date_Day=str(alteredDigitDay[count_a]) 
-        #reconstructed_date.append(+"-"+));
-        #print(full_holiday_set['Month'][count_a],full_holiday_set['Day'][count_a]);
-        #stringTOdates=datetime.strptime(str(full_holiday_set['Month'][count_a])+"-"+str(full_holiday_set['Day'][count_a]), '%m%d');
-        #print(stringTOdates);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
    
@@ -122,14 +111,14 @@ def holidays():
     print('holiday_today ',holiday_today);
     print('next_holidays_this_month ',next_holidays_this_month);
     print('holidays_this_month ',holidays_this_month);   
-    '''   
+      
     print(holiday_doc);  
     print(synthetic_cal2);
     print(full_holiday_set);   
     print(str(datetime.now()+timedelta(days=13))[5:][:5],' type--', type(str(datetime.now()+timedelta(days=22))),'--',datetime.now()+timedelta(days=22));
     print('end holidays');
-   
-    return 0;
+    '''
+    return full_holiday_set0;
 holidays();    
 
 
