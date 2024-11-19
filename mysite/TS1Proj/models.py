@@ -27,10 +27,7 @@ import holidays;
 def holidays_Calendar():
     current_month=datetime.now().month;
     current_day=datetime.now().day;   
-       
-    #_10_days_from_now=datetime.today() + timedelta(days=10);
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
-        
     holiday_name=[];
     Month=[];
     Day=[];
@@ -41,14 +38,12 @@ def holidays_Calendar():
     next_year=next_year.year
     current_year=datetime.today().year;
     the_holidays=country_holidays('US', years=current_year);
-      
     def loop_holiday_api(_year_):
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
               count=count+1;
-    
     loop_holiday_api(next_year);
     for elements in date:
            str_elements=str(elements)[5:];
@@ -56,7 +51,6 @@ def holidays_Calendar():
            day=str_elements[3:]
            Month.append(month);
            Day.append(day);
-           
     synthetic_cal2=pandas.DataFrame(data);  
     full_holiday_set=pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
     count_a=0;
@@ -69,40 +63,23 @@ def holidays_Calendar():
             alteredDigitDay='0'+alteredDigitDay
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
-    full_holiday_set['reconstructed_date']=reconstructed_date; 
-    #print('synthetic_cal2');
-    #print(synthetic_cal2);
-    #print('holiday_doc');
-    #print(holiday_doc);
+    full_holiday_set['reconstructed_date']=reconstructed_date;
+    full_holiday_set=full_holiday_set.drop_duplicates();
     return full_holiday_set;
-   
 
 def Holiday_selector():
-    
     close_holiday=[];
     close_holiday_date=[];
-   
-    
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
     this_month=_today_[:2];
     next_month=str(int(this_month)+1);
-    #print('this_month = ',this_month);
-    #print('next_month = ',next_month);
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     counter=0;
     while counter < len(calendar_dates):
        month=calendar_dates[counter][:2];
        the_day=calendar_dates[counter][3:];
-       '''
-        if month==this_month:
-           if the_day > _today_[3:]:
-              #print('current Month','- date ',the_day);
-              #close_holiday.append(calendar['Holiday Name'][counter]);
-              #close_holiday_date.append(calendar_dates[counter]);
-              print(close_holiday);
-       ''' 
        counter=counter+1;
     if len(close_holiday_date)==0:    
        counter=0;
@@ -112,26 +89,16 @@ def Holiday_selector():
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
          counter=counter+1;
-           
-   
     upcommingHolidays=pandas.DataFrame({'holiday comming up':close_holiday,'date':close_holiday_date});
-  
     count=0;
     sorting_ints=[];
-    print('len of arr ',len(upcommingHolidays['date'][count]));
     while count < len(upcommingHolidays['date']):
-        print('count - ',count,"-",int(upcommingHolidays['date'][count][3:]));
-        print(sorting_ints);
-        print('len sorting units ',len(sorting_ints));
         sorting_ints.append(int(upcommingHolidays['date'][count][3:]));
         count=count+1;    
-    print(sorting_ints) 
     upcommingHolidays['sorting_ints']=sorting_ints;
     upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints');
     upcommingHolidays=upcommingHolidays.drop_duplicates();
-    
-  
-    print(upcommingHolidays)   
+      
     return 0;
 
 
