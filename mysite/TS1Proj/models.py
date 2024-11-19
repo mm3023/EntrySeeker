@@ -94,27 +94,28 @@ def Holiday_selector():
     print('Today = ',_today_);
     counter=0;
     while counter < len(calendar_dates):
-        month=calendar_dates[counter][:2];
-        the_day=calendar_dates[counter][3:];
-        #print('close_holiday_date ',len(close_holiday_date));
-        if month==this_month:
-            if the_day > _today_[3:]:
-               print('current Month','- date ',the_day);
-               #close_holiday.append(calendar['Holiday Name'][counter]);
-               #close_holiday_date.append(calendar_dates[counter]);
-               print(close_holiday);
-               print(close_holiday_date)
-        print('close_holiday_date ',len(close_holiday_date)); 
+       month=calendar_dates[counter][:2];
+       the_day=calendar_dates[counter][3:];
+       #print('close_holiday_date ',len(close_holiday_date));
+       if month==this_month:
+           if the_day > _today_[3:]:
+              print('current Month','- date ',the_day);
+              #close_holiday.append(calendar['Holiday Name'][counter]);
+              #close_holiday_date.append(calendar_dates[counter]);
+              print(close_holiday);
+              print(close_holiday_date)
+       print('close_holiday_date ',len(close_holiday_date)); 
+       counter=counter+1;
     if len(close_holiday_date)==0:    
        counter=0;
        while counter < len(calendar_dates):    
-            #if len(close_holiday_date)==0:
-            print('month = ',month,"--",'next_month = ',next_month);
-            close_holiday.append(calendar['Holiday Name'][counter]);
-            close_holiday_date.append(calendar_dates[counter]);
-            print('broken next month - ',next_month);
-            print(close_holiday_date);    
-            counter=counter+1;
+          #if len(close_holiday_date)==0:
+          print('month = ',month,"--",'next_month = ',next_month);
+          close_holiday.append(calendar['Holiday Name'][counter]);
+          close_holiday_date.append(calendar_dates[counter]);
+          print('broken next month - ',next_month);
+          print(close_holiday_date);    
+          counter=counter+1;
     print('upcommingHolidays')       
     return upcommingHolidays;
 
