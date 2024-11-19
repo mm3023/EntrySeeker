@@ -72,7 +72,7 @@ def holidays_Calendar():
     full_holiday_set['reconstructed_date']=reconstructed_date; 
     print('synthetic_cal2');
     print(synthetic_cal2);
-    print(holiday_doc);
+    print('holiday_doc');
     print(holiday_doc);
     return full_holiday_set;
    
@@ -84,7 +84,9 @@ def Holiday_selector():
     print(holidays_Calendar());
     print('Today = ',_today_);
     for days in calendar_dates:
-        print('days',days,'today',_today_,days==_today_);
+        month=day[:2];
+        the_day=day[:2];
+        print('month = ',day[:2],' day = ',days[3:],'','formed day = ',days,' today = ',_today_,days==_today_);
      
 
 
