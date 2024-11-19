@@ -119,7 +119,7 @@ def Holiday_selector():
     count=0;
     sorting_ints=[];
     print('len of arr ',len(upcommingHolidays['date'][count]));
-    while count < int(len(upcommingHolidays['date'][count]))+1:
+    while count < len(upcommingHolidays['date']):
         print('count - ',count,"-",int(upcommingHolidays['date'][count][3:]));
         print(sorting_ints);
         print('len sorting units ',len(sorting_ints));
