@@ -99,7 +99,7 @@ def Holiday_selector():
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
             print(close_holiday);
-            print(close_holidat_date)
+            print(close_holiday_date)
         #if month>this_month:
         #    print('true found')
         #_today_plus_ten_days
