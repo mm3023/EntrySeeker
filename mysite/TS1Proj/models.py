@@ -80,7 +80,8 @@ def holidays_Calendar():
 def Holiday_selector():
     #timedelta(days=10)
     close_holiday=[];
-    close_holiday_date=[];
+    close_holiday_date=['holiday comming up':close_holiday_date,'date':close_holiday_date];
+    upcommingHolidays={}
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
     this_month=_today_[:2]
@@ -105,9 +106,9 @@ def Holiday_selector():
                print(close_holiday);
                print(close_holiday_date)
         print('close_holiday_date ',len(close_holiday_date));        
-        if len(close_holiday_date[0])==0:
+        if len(close_holiday_date)==0:
             print(next_month);
-            
+        print(close_holiday_date);    
         #if month>this_month:
         #    print('true found')
         #_today_plus_ten_days
