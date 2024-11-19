@@ -93,7 +93,7 @@ def Holiday_selector():
        #if the_day==_today_:
        #    print('match');
        counter=counter+1;
-    if len(close_holiday_date)==0:    
+    if len(close_holiday_date)<2:    
        counter=0;
        while counter < len(calendar_dates):
          month=calendar_dates[counter][:2];   
