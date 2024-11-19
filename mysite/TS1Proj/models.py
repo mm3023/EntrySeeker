@@ -83,7 +83,7 @@ def Holiday_selector():
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     print(holidays_Calendar());
-    print('Today = ',_today_);
+    #print('Today = ',_today_);
     counter=0;
     while len(calendar_dates):
         month=calendar_dates[counter][:2];
