@@ -85,24 +85,26 @@ def holidays():
         #for stuff in full_holiday_set['Month']:
         #print('reconstructed_date ',reconstructed_date);
         #print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
-        alteredDigitMonth=full_holiday_set['Month'];
-        alteredDigitDay=full_holiday_set['Day'];
-        if len(str(alteredDigitMonth)[count_a])==1:
-            print(alteredDigitMonth[count_a]);
-            #print(str(alteredDigitMonth[count_a]));
-            #alteredDigitMonth[count_a]; 
-            print(str(alteredDigitMonth[count_a])[:1]);
-            #int(str(alteredDigitMonth[count_a])[:1]);
-            #print(int(str(alteredDigitMonth[count_a])[:1])==0);
-            print('0'+str(alteredDigitMonth[count_a])[1:]);
-        if len(str(alteredDigitDay)[count_a])==1:
-            print(alteredDigitDay[count_a]);  
-            print(str(alteredDigitDay[count_a])[:1]);
-            #int(str(alteredDigitDay[count_a])[:1]);
-            #print(int(str(alteredDigitDay[count_a])[1:])==0);
-            print('0'+str(alteredDigitMonth[count_a])[1:]);
-        reconstructed_date.append(str(alteredDigitMonth[count_a])+"-"+str(alteredDigitDay[count_a]));
-        corrected_date_Month=str(alteredDigitMonth[count_a])
+        alteredDigitMonth=full_holiday_set['Month'][count_a];
+        alteredDigitDay=full_holiday_set['Day'][count_a];
+        #corrected_date_Month=alteredDigitMonth[count_a];
+        #corrected_date_Day=alteredDigitDay[count_a]; 
+        if len(str(alteredDigitMonth))==1:
+            print(alteredDigitMonth);
+            #print(str(alteredDigitMonth));
+            #alteredDigitMonth; 
+            print(str(alteredDigitMonth)[:1]);
+            #int(str(alteredDigitMonth)[:1]);
+            #print(int(str(alteredDigitMonth)[:1])==0);
+            print('0'+str(alteredDigitMonth)[1:]);
+        if len(str(alteredDigitDay))==1:
+            print(alteredDigitDay);  
+            print(str(alteredDigitDay)[:1]);
+            #int(str(alteredDigitDay)[:1]);
+            #print(int(str(alteredDigitDay)[1:])==0);
+            print('0'+str(alteredDigitMonth)[1:]);
+        reconstructed_date.append(str(alteredDigitMonth)+"-"+str(alteredDigitDay));
+        #corrected_date_Month=str(alteredDigitMonth[count_a])
         #corrected_date_Day=str(alteredDigitDay[count_a]) 
         #reconstructed_date.append(+"-"+));
         #print(full_holiday_set['Month'][count_a],full_holiday_set['Day'][count_a]);
