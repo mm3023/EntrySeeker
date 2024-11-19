@@ -81,7 +81,7 @@ def Holiday_selector():
     #timedelta(days=10)
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
-    this_month=_today_[]
+    #this_month=_today_[]
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     print(holidays_Calendar());
