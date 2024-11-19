@@ -125,27 +125,10 @@ def Holiday_selector():
         print('len sorting units ',len(sorting_ints));
         sorting_ints.append(int(upcommingHolidays['date'][count][3:]));
         count=count+1;    
-    #print(upcommingHolidays['sorting_ints']);
+    upcommingHolidays['sorting_ints']=sorting_ints
     upcommingHolidays.sort_values(by='date',ascending=False)
     
-    '''
-    counter=0;
-    print(upcommingHolidays)
-    upcommingHolidays.sort_values(by='date',ascending=False)
-    shufflearr1date=[];
-    shufflearr2date=[];
-    shufflearr1name=[];
-    shufflearr2dname=[];
-    while len(upcommingHolidays) > counter:
-      if upcommingHolidays['date'][counter]<upcommingHolidays['date'][counter+1]:
-        print('upcommingHolidays['date'][counter] ',upcommingHolidays['date'][counter]+1)
-        df.sort_values(by='col1', ascending=False)  
-        shufflearr1date.append(upcommingHolidays['date'][counter]); 
-        shufflearr1name.append(upcommingHolidays['holiday comming up'][counter]); 
-      upcommingHolidays['date'][counter+1];  
-      #upcommingHolidays['holiday comming up'][counter];
-      counter=counter+1; 
-    '''
+  
     print(upcommingHolidays)   
     return 0;
 
