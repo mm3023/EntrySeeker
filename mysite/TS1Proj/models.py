@@ -64,7 +64,6 @@ def holidays_Calendar():
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date;
-    #full_holiday_set=full_holiday_set.drop_duplicates();
     return full_holiday_set;
 
 def Holiday_selector():
@@ -76,8 +75,6 @@ def Holiday_selector():
     next_month=str(int(this_month)+1);
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
-    #print('calendar_dates ',calendar_dates)
-    #print('len calendar_dates ',len(calendar_dates))
     counter=0;
     while counter < len(calendar_dates):
        month=calendar_dates[counter][:2];
@@ -88,10 +85,6 @@ def Holiday_selector():
              close_holiday.append(calendar['Holiday Name'][counter]);
              close_holiday_date.append(calendar_dates[counter]);
        the_day=calendar_dates[counter][3:]; 
-       #print('_today_ = ',_today_[3:]);
-       #print('the_day =',the_day,"  _today_[3:] = ",_today_[3:]);
-       #if the_day==_today_:
-       #    print('match');
        counter=counter+1;
     if len(close_holiday_date)<2:    
        counter=0;
