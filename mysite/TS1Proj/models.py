@@ -121,7 +121,7 @@ def holidays():
     print(holiday_doc);  
     print(synthetic_cal2);
     print(full_holiday_set);   
-    print(str(datetime.now()+timedelta(days=11))[5:],' type--', type(str(datetime.now()+timedelta(days=22))),'--',datetime.now()+timedelta(days=22));
+    print(str(datetime.now()+timedelta(days=11))[5:][:5],' type--', type(str(datetime.now()+timedelta(days=22))),'--',datetime.now()+timedelta(days=22));
     print('end holidays');
    
     return 0;
