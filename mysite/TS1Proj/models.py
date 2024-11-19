@@ -78,18 +78,18 @@ def holidays():
            Day.append(day);
            
     synthetic_cal2=pandas.DataFrame(data);  
-    print('current_month ',current_month)
-    
-    
-    full_holiday_set = pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
+    #print('current_month ',current_month)
+    full_holiday_set=pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
     count_a=0;
     while count_a<len(full_holiday_set['Month']):
         #for stuff in full_holiday_set['Month']:
-        print('reconstructed_date ',reconstructed_date);
-        print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
+        #print('reconstructed_date ',reconstructed_date);
+        #print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
         reconstructed_date.append(str(full_holiday_set['Month'][count_a])+"-"+str(full_holiday_set['Day'][count_a]));
         #print(full_holiday_set['Month'][count_a],full_holiday_set['Day'][count_a]);
         count_a=count_a+1;
+    full_holiday_set['reconstructed_date']=reconstructed_date; 
+    print(datetime.now())
     
     '''
     holidays_all_upcomming_months=full_holiday_set[full_holiday_set [Month]>current_month];    
