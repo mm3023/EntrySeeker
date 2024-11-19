@@ -52,6 +52,7 @@ def holidays():
     Month=[];
     Day=[];
     date=[];
+    reconstructed_date=[];
     data={'Holiday Name':holiday_name,'Month':Month,'Day':Day}
     next_year=datetime.today() + timedelta(days=365);
     next_year=next_year.year
@@ -81,7 +82,12 @@ def holidays():
     
     
     full_holiday_set = pandas.concat([synthetic_cal2, holiday_doc], ignore_index=True);
-    
+    count_a=0;
+    while count_a=0:
+        #for stuff in full_holiday_set['Month']:
+        print('reconstructed_date ',reconstructed_date);
+        print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
+        #full_holiday_set['Month'][count_a] full_holiday_set['Day'][count_a]
     
     
     '''
