@@ -88,9 +88,13 @@ def holidays():
         if len(str(full_holiday_set['Month'][count_a]))==2:
             print(full_holiday_set['Month'][count_a]);
             print(str(full_holiday_set['Month'][count_a])[:1]);
+            int(str(full_holiday_set['Month'][count_a])[:1]);
+            print(int(str(full_holiday_set['Month'][count_a])[:1])==0);
         if len(str(full_holiday_set['Day'][count_a]))==2:
             print(full_holiday_set['Day'][count_a]);  
             print(str(full_holiday_set['Day'][count_a])[:1]);
+            int(str(full_holiday_set['Day'][count_a])[:1]);
+            print(int(str(full_holiday_set['Day'][count_a])[:1])==0);
         reconstructed_date.append(str(full_holiday_set['Month'][count_a])+"/"+str(full_holiday_set['Day'][count_a]));
         #print(full_holiday_set['Month'][count_a],full_holiday_set['Day'][count_a]);
         #stringTOdates=datetime.strptime(str(full_holiday_set['Month'][count_a])+"/"+str(full_holiday_set['Day'][count_a]), '%m%d');
