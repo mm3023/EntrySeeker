@@ -126,8 +126,9 @@ def Holiday_selector():
         sorting_ints.append(int(upcommingHolidays['date'][count][3:]));
         count=count+1;    
     print(sorting_ints) 
-    upcommingHolidays['sorting_ints']=sorting_ints
-    upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints')
+    upcommingHolidays['sorting_ints']=sorting_ints;
+    upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints');
+    upcommingHolidays=upcommingHolidays.drop_duplicates();
     
   
     print(upcommingHolidays)   
