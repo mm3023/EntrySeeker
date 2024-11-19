@@ -107,10 +107,11 @@ def Holiday_selector():
     sorting_ints_moonth=[];
     while count < len(upcommingHolidays['date']):
         sorting_ints_day.append(int(upcommingHolidays['date'][count][3:]));
+        sorting_ints_moonth.append(int(upcommingHolidays['date'][count][:2]));
         
         count=count+1;    
     upcommingHolidays['sorting_ints_day']=sorting_ints_day;
-    #upcommingHolidays['sorting_ints_moonth']=sorting_ints_moonth;
+    upcommingHolidays['sorting_ints_moonth']=sorting_ints_moonth;
     upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints_day');
     #upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints_moonth');
     upcommingHolidays=upcommingHolidays.drop_duplicates();
