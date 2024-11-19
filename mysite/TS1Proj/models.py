@@ -85,7 +85,7 @@ def Holiday_selector():
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
     this_month=_today_[:2]
-    next_month=int(this_month)+1
+    next_month=str(int(this_month)+1)
     print('this_month = ',this_month);
     print('next_month = ',next_month);
     calendar=holidays_Calendar();
@@ -107,6 +107,7 @@ def Holiday_selector():
                print(close_holiday_date)
         print('close_holiday_date ',len(close_holiday_date));        
         if len(close_holiday_date)==0:
+            print('month = ',month,"--",'next_month = ',next_month);
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
             print(next_month);
