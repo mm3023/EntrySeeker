@@ -116,7 +116,7 @@ def Holiday_selector():
     upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints_moonth');
     upcommingHolidays=upcommingHolidays.drop_duplicates();
     upcommingHolidays=upcommingHolidays.drop(columns=['sorting_ints_day','sorting_ints_moonth'])
-      
+    upcommingHolidays = upcommingHolidays.reset_index(drop=True)  
     return upcommingHolidays;
      
 
