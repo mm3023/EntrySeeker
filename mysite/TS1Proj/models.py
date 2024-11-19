@@ -83,8 +83,8 @@ def Holiday_selector():
        month=calendar_dates[counter][:2];
        if month==this_month:
           print(calendar_dates[counter]) 
-          #print(the_day);
-          if int(the_day)>int(_today_):
+          print('day from data = ',the_day,' _today_ ',calendar_dates[counter]);
+          if int(the_day)>int(_today_[3:]):
              close_holiday.append(calendar['Holiday Name'][counter]);
              close_holiday_date.append(calendar_dates[counter]);
        the_day=calendar_dates[counter][3:]; 
