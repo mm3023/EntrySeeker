@@ -78,72 +78,53 @@ def holidays_Calendar():
    
 
 def Holiday_selector():
-    #timedelta(days=10)
+    
     close_holiday=[];
     close_holiday_date=[];
-    #upcommingHolidays={'holiday comming up':close_holiday_date,'date':close_holiday_date};
-    #upcommingHolidays=pandas.DataFrame({'holiday comming up':close_holiday_date,'date':close_holiday_date});
+   
     
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
     this_month=_today_[:2];
     next_month=str(int(this_month)+1);
-    print('this_month = ',this_month);
-    print('next_month = ',next_month);
+    #print('this_month = ',this_month);
+    #print('next_month = ',next_month);
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
-    #print(holidays_Calendar());
-    print('Today = ',_today_);
     counter=0;
     while counter < len(calendar_dates):
        month=calendar_dates[counter][:2];
        the_day=calendar_dates[counter][3:];
-       #print('close_holiday_date ',len(close_holiday_date));
-       if month==this_month:
+        '''
+        if month==this_month:
            if the_day > _today_[3:]:
               #print('current Month','- date ',the_day);
               #close_holiday.append(calendar['Holiday Name'][counter]);
               #close_holiday_date.append(calendar_dates[counter]);
               print(close_holiday);
-              #print(close_holiday_date);
-       #print('close_holiday_date ',len(close_holiday_date)); 
+        ''' 
        counter=counter+1;
-       #print('counter l1= ',counter); 
     if len(close_holiday_date)==0:    
        counter=0;
        while counter < len(calendar_dates):
          month=calendar_dates[counter][:2];   
-         #print('counter l2= ',counter);   
-         #print(calendar_dates[counter]);  
-         print('name - ',calendar['Holiday Name'][counter]);
-         #print('month = ',month,'  |  next month = ',next_month);  
-         #if len(close_holiday_date)==0:
          if month==next_month:
-            print(" name ",calendar['Holiday Name'][counter]); 
-            #print('!!!!! month = ',month,'  |  next month = ',next_month);  
-            #print('-- under if--',calendar_dates[counter]);  
-            #print('-- under if--',calendar['Holiday Name'][counter]);   
-            #print('month = ',month,"--",'next_month = ',next_month);
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
-            #print('broken next month - ',next_month);
-            print('name = ',close_holiday); 
-            print('date = ',close_holiday_date);    
          counter=counter+1;
            
-    #print(upcommingHolidays)       
-    #upcommingHolidays={'holiday comming up':close_holiday_date,'date':close_holiday_date};
+   
     upcommingHolidays=pandas.DataFrame({'holiday comming up':close_holiday,'date':close_holiday_date});
-    #print("-orient-")
+  
     count=0;
     sorting_ints=[];
-    #print(upcommingHolidays['date'][0])
+    
     
     while len(upcommingHolidays['date'][count]) > count:
-        print('loop - ',upcommingHolidays['date'][count][3:])
+        sorting_ints.append(int(upcommingHolidays['date'][count][3:]));
         #sorting_ints.append(int(upcommingHolidays['date'][count]));
         count=count+1;    
-    #upcommingHolidays['sorting_ints']=sorting_ints
+    upcommingHolidays['sorting_ints']=sorting_ints
     upcommingHolidays.sort_values(by='date',ascending=False)
     
     '''
