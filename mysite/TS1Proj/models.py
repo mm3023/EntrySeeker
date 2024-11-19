@@ -79,22 +79,31 @@ def holidays_Calendar():
 
 def Holiday_selector():
     #timedelta(days=10)
+    close_holiday=[];
+    close_holiday_date=[];
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
-    #this_month=_today_[]
+    this_month=_today_[:2]
+    print('this_month = ',this_month);
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
-    print(holidays_Calendar());
+    #print(holidays_Calendar());
     print('Today = ',_today_);
     counter=0;
     while counter < len(calendar_dates):
+        #calendar['Holiday Name'][counter];
         month=calendar_dates[counter][:2];
-        the_day=calendar_dates[counter][:2];
-        if month==_today_plus_ten_days:
+        the_day=calendar_dates[counter][3:];
+        if month==this_month:
+            print('current Month','- date ',the_day);
+            close_holiday.append(calendar['Holiday Name'][counter]);
+            close_holiday_date.append(calendar_dates[counter]);
+        
+        if month==_today_:
             print('true found')
         _today_plus_ten_days
         print('')
-        print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,calendar_dates[counter]==_today_plus_ten_days);
+        print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,'_today_plus_ten_days = ',_today_plus_ten_day,' | ',calendar_dates[counter]==_today_plus_ten_days);
         counter=counter+1;
 
 
