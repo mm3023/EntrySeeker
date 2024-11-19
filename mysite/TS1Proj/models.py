@@ -114,12 +114,12 @@ def Holiday_selector():
        while counter < len(calendar_dates):
          month=calendar_dates[counter][:2];   
          #print('counter l2= ',counter);   
-         print(calendar_dates[counter]);  
-         print(calendar['Holiday Name'][counter]);
-         print('month = ',month,'  |  next month = ',next_month);  
+         #print(calendar_dates[counter]);  
+         print('name - ',calendar['Holiday Name'][counter]);
+         #print('month = ',month,'  |  next month = ',next_month);  
          #if len(close_holiday_date)==0:
          if month==next_month:
-            print(calendar['Holiday Name'][counter]); 
+            print(" name ",calendar['Holiday Name'][counter]); 
             #print('!!!!! month = ',month,'  |  next month = ',next_month);  
             #print('-- under if--',calendar_dates[counter]);  
             #print('-- under if--',calendar['Holiday Name'][counter]);   
@@ -127,7 +127,8 @@ def Holiday_selector():
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
             #print('broken next month - ',next_month);
-            print(close_holiday_date);    
+            print('name = ',close_holiday); 
+            print('date = ',close_holiday_date);    
          counter=counter+1;
     #print(upcommingHolidays)       
     return 0;
