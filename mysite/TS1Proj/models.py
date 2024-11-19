@@ -94,7 +94,7 @@ def Holiday_selector():
         #calendar['Holiday Name'][counter];
         month=calendar_dates[counter][:2];
         the_day=calendar_dates[counter][3:];
-        print('close_holiday_date[0] ',len(close_holiday_date[0]));
+        print('close_holiday_date ',len(close_holiday_date));
         if month==this_month:
             if the_day > _today_[3:]:
                print('current Month','- date ',the_day);
@@ -102,7 +102,7 @@ def Holiday_selector():
                close_holiday_date.append(calendar_dates[counter]);
                print(close_holiday);
                print(close_holiday_date)
-        print('close_holiday_date[0] ',len(close_holiday_date[0]));        
+        print('close_holiday_date ',len(close_holiday_date));        
         #if len(close_holiday_date[0])==0:
         #if month>this_month:
         #    print('true found')
