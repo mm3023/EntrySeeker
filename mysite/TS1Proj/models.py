@@ -98,12 +98,13 @@ def Holiday_selector():
             print('current Month','- date ',the_day);
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
-        
-        if month==_today_:
-            print('true found')
+            print(close_holiday);
+            print(close_holidat_date)
+        #if month>this_month:
+        #    print('true found')
         #_today_plus_ten_days
-        print('')
-        print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,'_today_plus_ten_days = ',_today_plus_ten_days,' | ',calendar_dates[counter]==_today_plus_ten_days);
+        #print('')
+        #print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,'_today_plus_ten_days = ',_today_plus_ten_days,' | ',calendar_dates[counter]==_today_plus_ten_days);
         counter=counter+1;
 
 
