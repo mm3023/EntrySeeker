@@ -134,6 +134,11 @@ def Holiday_selector():
     #print(upcommingHolidays)       
     #upcommingHolidays={'holiday comming up':close_holiday_date,'date':close_holiday_date};
     upcommingHolidays=pandas.DataFrame({'holiday comming up':close_holiday,'date':close_holiday_date});
+    counter=0;
+    while len(upcommingHolidays) > counter:
+      upcommingHolidays['date'][counter];
+      upcommingHolidays['holiday comming up'][counter];
+      counter=counter+1; 
     print(upcommingHolidays)   
     return 0;
 
