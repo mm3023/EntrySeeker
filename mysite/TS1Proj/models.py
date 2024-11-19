@@ -28,7 +28,6 @@ def holidays():
     current_month=datetime.now().month;
     current_day=datetime.now().day;   
        
-    print("inside holidays-----");
     _10_days_from_now=datetime.today() + timedelta(days=10);
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
         
@@ -66,17 +65,11 @@ def holidays():
         alteredDigitDay=str(full_holiday_set['Day'][count_a]);
         if len(alteredDigitMonth)==1:
             alteredDigitMonth='0'+alteredDigitMonth
-            #print(alteredDigitMonth);
         if len(alteredDigitDay)==1:
             alteredDigitDay='0'+alteredDigitDay
-            #print(alteredDigitDay);
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
-
-    
-    
-
     return full_holiday_set;
 print(holidays());    
 
