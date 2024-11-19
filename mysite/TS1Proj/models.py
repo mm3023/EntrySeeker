@@ -88,7 +88,7 @@ def holidays():
         print('reconstructed_date ',reconstructed_date);
         print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
         #full_holiday_set['Month'][count_a] full_holiday_set['Day'][count_a]
-    
+        count_a=count_a+1;
     
     '''
     holidays_all_upcomming_months=full_holiday_set[full_holiday_set [Month]>current_month];    
