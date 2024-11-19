@@ -15,17 +15,8 @@ import pandas;
 from django import forms;
 import holidays;
 
-_10_days_from_now=datetime.today() + timedelta(days=10);
-holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');
-
-
-#print(holiday_doc);
-
-
-
-
-
-
+#_10_days_from_now=datetime.today() + timedelta(days=10);
+#holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');
 
 
 
@@ -43,8 +34,6 @@ def holidays():
     current_day=datetime.now().day;   
        
     print("inside holidays-----");
-    #print(datetime.now().month)
-    #print(datetime.now().day)   
     _10_days_from_now=datetime.today() + timedelta(days=10);
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
         
@@ -64,7 +53,6 @@ def holidays():
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
               holiday_name.append(list(country_holidays('US', years=_year_).values())[count]);
-              #print('holiday name = ',list(country_holidays('US', years=_year_).values())[count]);
               date.append(list(country_holidays('US', years=_year_).keys())[count]);
               count=count+1;
     
