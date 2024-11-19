@@ -78,6 +78,8 @@ def Holiday_selector():
     calendar_dates=calendar['reconstructed_date'];
     counter=0;
     while counter < len(calendar_dates):
+        
+       print(len(calendar_dates)); 
        month=calendar_dates[counter][:2];
        the_day=calendar_dates[counter][3:];
        counter=counter+1;
