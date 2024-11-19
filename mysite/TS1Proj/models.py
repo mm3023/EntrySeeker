@@ -76,7 +76,9 @@ def Holiday_selector():
     next_month=str(int(this_month)+1);
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
+    print('calendar_dates ',calendar_dates)
     counter=0;
+    '''
     while counter < len(calendar_dates):
         
        print(len(calendar_dates)); 
@@ -102,7 +104,7 @@ def Holiday_selector():
     upcommingHolidays=upcommingHolidays.drop_duplicates();
       
     return 0;
-
+    ''' 
 
 Holiday_selector();    
 
