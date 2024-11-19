@@ -70,23 +70,28 @@ def holidays_Calendar():
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
-    print('synthetic_cal2');
-    print(synthetic_cal2);
-    print('holiday_doc');
-    print(holiday_doc);
+    #print('synthetic_cal2');
+    #print(synthetic_cal2);
+    #print('holiday_doc');
+    #print(holiday_doc);
     return full_holiday_set;
    
 
 def Holiday_selector():
-    _today_=str(datetime.today() - timedelta(days=8))[5:][:5];
+    #timedelta(days=10)
+    _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     print(holidays_Calendar());
     print('Today = ',_today_);
-    for day in calendar_dates:
-        month=day[:2];
-        the_day=day[3:];
-        print('month = ',month,' day = ',the_day,'','formed day = ',day,' today = ',_today_,day==_today_);
+    counter=0;
+    while len(calendar_dates):
+        month=calendar_dates[counter][:2];
+        the_day=calendar_dates[counter][:2];
+        day==_today_plus_ten_days
+        _today_plus_ten_days
+        print('')
+        print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,calendar_dates[counter]==_today_plus_ten_days);
      
 
 
