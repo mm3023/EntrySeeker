@@ -84,8 +84,8 @@ def Holiday_selector():
     upcommingHolidays={'holiday comming up':close_holiday_date,'date':close_holiday_date}
     _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
-    this_month=_today_[:2]
-    next_month=str(int(this_month)+1)
+    this_month=_today_[:2];
+    next_month=str(int(this_month)+1);
     print('this_month = ',this_month);
     print('next_month = ',next_month);
     calendar=holidays_Calendar();
@@ -94,10 +94,9 @@ def Holiday_selector():
     print('Today = ',_today_);
     counter=0;
     while counter < len(calendar_dates):
-        #calendar['Holiday Name'][counter];
         month=calendar_dates[counter][:2];
         the_day=calendar_dates[counter][3:];
-        print('close_holiday_date ',len(close_holiday_date));
+        #print('close_holiday_date ',len(close_holiday_date));
         if month==this_month:
             if the_day > _today_[3:]:
                print('current Month','- date ',the_day);
@@ -110,13 +109,8 @@ def Holiday_selector():
             print('month = ',month,"--",'next_month = ',next_month);
             close_holiday.append(calendar['Holiday Name'][counter]);
             close_holiday_date.append(calendar_dates[counter]);
-            print(next_month);
+            print('broken next month - ',next_month);
         print(close_holiday_date);    
-        #if month>this_month:
-        #    print('true found')
-        #_today_plus_ten_days
-        #print('')
-        #print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,'_today_plus_ten_days = ',_today_plus_ten_days,' | ',calendar_dates[counter]==_today_plus_ten_days);
         counter=counter+1;
 
 
