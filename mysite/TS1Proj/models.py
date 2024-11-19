@@ -77,7 +77,9 @@ def Holiday_selector():
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     print('calendar_dates ',calendar_dates)
+    print('len calendar_dates ',len(calendar_dates))
     counter=0;
+    
     '''
     while counter < len(calendar_dates):
         
