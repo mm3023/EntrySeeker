@@ -127,7 +127,7 @@ def Holiday_selector():
         count=count+1;    
     print(sorting_ints) 
     upcommingHolidays['sorting_ints']=sorting_ints
-    upcommingHolidays.sort_values(by='date',ascending=False)
+    upcommingHolidays.sort_values(by='sorting_ints',ascending=False)
     
   
     print(upcommingHolidays)   
