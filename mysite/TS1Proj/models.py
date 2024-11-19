@@ -28,7 +28,7 @@ def holidays_Calendar():
     current_month=datetime.now().month;
     current_day=datetime.now().day;   
        
-    _10_days_from_now=datetime.today() + timedelta(days=10);
+    #_10_days_from_now=datetime.today() + timedelta(days=10);
     holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');  
         
     holiday_name=[];
@@ -71,7 +71,24 @@ def holidays_Calendar():
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
     return full_holiday_set;
-print(holidays_Calendar());    
+   
+
+def Holiday_selector():
+    -today-=str(datetime.today() + timedelta(days=365))[5:5];
+    print(-today-);
+    print(holidays_Calendar());
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
