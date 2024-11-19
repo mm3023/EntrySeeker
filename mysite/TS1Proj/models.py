@@ -79,16 +79,19 @@ def holidays_Calendar():
 
 def Holiday_selector():
     #timedelta(days=10)
+    _today_=str(datetime.today())[5:][:5];
     _today_plus_ten_days=str(datetime.today() + timedelta(days=10))[5:][:5];
+    this_month=_today_[]
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     print(holidays_Calendar());
-    #print('Today = ',_today_);
+    print('Today = ',_today_);
     counter=0;
     while len(calendar_dates):
         month=calendar_dates[counter][:2];
         the_day=calendar_dates[counter][:2];
-        day==_today_plus_ten_days
+        if month==_today_plus_ten_days:
+            print('true found')
         _today_plus_ten_days
         print('')
         print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,calendar_dates[counter]==_today_plus_ten_days);
