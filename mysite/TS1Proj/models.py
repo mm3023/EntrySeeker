@@ -79,6 +79,7 @@ def Holiday_selector():
     print(holidays_Calendar()['reconstructed_date']);
     print(holidays_Calendar());
     print('Today = ',_today_);
+    print(datetime.today())
 Holiday_selector();    
 
 
