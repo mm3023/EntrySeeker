@@ -103,7 +103,7 @@ def Holiday_selector():
             print('true found')
         #_today_plus_ten_days
         print('')
-        print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,'_today_plus_ten_days = ',_today_plus_ten_day,' | ',calendar_dates[counter]==_today_plus_ten_days);
+        print('month = ',month,' day = ',the_day,'','formed day = ',calendar_dates[counter],' today = ',_today_,'_today_plus_ten_days = ',_today_plus_ten_days,' | ',calendar_dates[counter]==_today_plus_ten_days);
         counter=counter+1;
 
 
