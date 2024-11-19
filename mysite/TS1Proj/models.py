@@ -87,7 +87,7 @@ def holidays():
         #print("full_holiday_set['Month'] ",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Month'][count_a]," --  ","full_holiday_set['Day'] type=",type(full_holiday_set['Day'][count_a])," ",full_holiday_set['Day'][count_a]);
         reconstructed_date.append(str(full_holiday_set['Month'][count_a])+"/"+str(full_holiday_set['Day'][count_a]));
         #print(full_holiday_set['Month'][count_a],full_holiday_set['Day'][count_a]);
-        stringTOdates=datetime.strptime(str(full_holiday_set['Month'][count_a])+"-"+str(full_holiday_set['Day'][count_a]), '%m%d');
+        stringTOdates=datetime.strptime(str(full_holiday_set['Month'][count_a])+"/"+str(full_holiday_set['Day'][count_a]), '%m%d');
         print(stringTOdates);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
