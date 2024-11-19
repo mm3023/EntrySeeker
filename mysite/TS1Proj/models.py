@@ -83,10 +83,10 @@ def Holiday_selector():
     
     while counter < len(calendar_dates):
         
-       month=calendar_dates[counter][:2] 
-       print('counter = ',counter,len(calendar_dates)); 
-       counter=counter+1; 
-    '''   
+       #month=calendar_dates[counter][:2] 
+       #print('counter = ',counter,len(calendar_dates)); 
+       #counter=counter+1; 
+      
        month=calendar_dates[counter][:2];
        the_day=calendar_dates[counter][3:];
        counter=counter+1;
@@ -108,10 +108,10 @@ def Holiday_selector():
     upcommingHolidays=upcommingHolidays.sort_values(by='sorting_ints');
     upcommingHolidays=upcommingHolidays.drop_duplicates();
       
-    return 0;
-    ''' 
+    return upcommingHolidays;
+     
 
-Holiday_selector();    
+print(Holiday_selector());    
 
 
 
