@@ -15,11 +15,6 @@ import pandas;
 from django import forms;
 import holidays;
 
-#_10_days_from_now=datetime.today() + timedelta(days=10);
-#holiday_doc=pandas.read_csv('TS1Proj/geminiholidays.csv');
-
-
-
 
 
 #calendar_id="arsaccess2022@gmail.com";
@@ -47,8 +42,7 @@ def holidays():
     next_year=next_year.year
     current_year=datetime.today().year;
     the_holidays=country_holidays('US', years=current_year);
-    
-  
+      
     def loop_holiday_api(_year_):
         count=0;
         while count < len(country_holidays('US', years=_year_).keys()):
@@ -71,43 +65,24 @@ def holidays():
         alteredDigitMonth=str(full_holiday_set['Month'][count_a]);
         alteredDigitDay=str(full_holiday_set['Day'][count_a]);
         if len(alteredDigitMonth)==1:
-            print("start")
-            print(alteredDigitMonth);
             alteredDigitMonth='0'+alteredDigitMonth
-            print(alteredDigitMonth);
+            #print(alteredDigitMonth);
         if len(alteredDigitDay)==1:
-            print("start")
-            print(alteredDigitDay);
             alteredDigitDay='0'+alteredDigitDay
-            print(alteredDigitDay);
+            #print(alteredDigitDay);
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
-   
+
     
-    '''
-    holidays_all_upcomming_months=full_holiday_set[full_holiday_set [Month]>current_month];    
-    holidays_upcomming_months=full_holiday_set[full_holiday_set [Month]==current_month+1]; 
-    #holidays_soon_next_month=holidays_upcomming_months[holidays_upcomming_months[]];   
-    holidays_this_month=full_holiday_set[full_holiday_set [Month]==current_month];
-    next_holidays_this_month=holidays_this_month[holidays_this_month[Day]>current_day];   
-    holiday_today=holidays_this_month[holidays_this_month[Day]==current_day]; 
     
-    print('holidays_all_upcomming_months ',holidays_all_upcomming_months);    
-    print('holidays_upcomming_months ',holidays_upcomming_months); 
-       
-    print('holiday_today ',holiday_today);
-    print('next_holidays_this_month ',next_holidays_this_month);
-    print('holidays_this_month ',holidays_this_month);   
-      
-    print(holiday_doc);  
-    print(synthetic_cal2);
-    print(full_holiday_set);   
-    print(str(datetime.now()+timedelta(days=13))[5:][:5],' type--', type(str(datetime.now()+timedelta(days=22))),'--',datetime.now()+timedelta(days=22));
-    print('end holidays');
-    '''
+
     return full_holiday_set;
-holidays();    
+print(holidays());    
+
+
+
+
 
 
 
