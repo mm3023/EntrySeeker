@@ -75,11 +75,18 @@ def holidays_Calendar():
 
 def Holiday_selector():
     _today_=str(datetime.today() + timedelta(days=365))[5:][:5];
-    print(_today_);
+    calendar=holidays_Calendar();
+    calendar_dates=calendar['reconstructed_date'];
+    #print(_today_);
     print(holidays_Calendar()['reconstructed_date']);
-    print(holidays_Calendar());
+    #print(holidays_Calendar());
     print('Today = ',_today_);
-    print(datetime.today() + timedelta(days=365))
+    #print(datetime.today() + timedelta(days=365))
+    for days in calendar_dates:
+        print(days);
+
+
+
 Holiday_selector();    
 
 
