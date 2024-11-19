@@ -134,13 +134,13 @@ def Holiday_selector():
     #print(upcommingHolidays)       
     #upcommingHolidays={'holiday comming up':close_holiday_date,'date':close_holiday_date};
     upcommingHolidays=pandas.DataFrame({'holiday comming up':close_holiday,'date':close_holiday_date});
-    print(upcommingHolidays)
+    #print("-orient-")
     count=0;
     sorting_ints=[];
     #print(upcommingHolidays['date'][0])
     
     while len(upcommingHolidays['date'][count]) > count:
-        print(upcommingHolidays['date'][count][3:])
+        print('loop - ',upcommingHolidays['date'][count][3:])
         #sorting_ints.append(int(upcommingHolidays['date'][count]));
         count=count+1;    
     #upcommingHolidays['sorting_ints']=sorting_ints
