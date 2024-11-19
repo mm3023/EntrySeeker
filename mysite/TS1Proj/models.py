@@ -104,7 +104,7 @@ def Holiday_selector():
               #print('current Month','- date ',the_day);
               #close_holiday.append(calendar['Holiday Name'][counter]);
               #close_holiday_date.append(calendar_dates[counter]);
-              #print(close_holiday);
+              print(close_holiday);
               #print(close_holiday_date)
        #print('close_holiday_date ',len(close_holiday_date)); 
        counter=counter+1;
