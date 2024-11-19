@@ -70,18 +70,22 @@ def holidays_Calendar():
         reconstructed_date.append(alteredDigitMonth+"-"+alteredDigitDay);
         count_a=count_a+1;
     full_holiday_set['reconstructed_date']=reconstructed_date; 
+    print('synthetic_cal2');
+    print(synthetic_cal2);
+    print(holiday_doc);
+    print(holiday_doc);
     return full_holiday_set;
    
 
 def Holiday_selector():
-    _today_=str(datetime.today() + timedelta(days=365))[5:][:5];
+    _today_=str(datetime.today() - timedelta(days=8))[5:][:5];
     calendar=holidays_Calendar();
     calendar_dates=calendar['reconstructed_date'];
     print(holidays_Calendar());
     print('Today = ',_today_);
     for days in calendar_dates:
         print('days',days,'today',_today_,days==_today_);
-        #print(days);
+     
 
 
 
