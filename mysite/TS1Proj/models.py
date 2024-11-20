@@ -1,4 +1,7 @@
 from __future__ import print_function;
+from seleniumbase import Driver
+import time
+
 
 from google.auth.transport.requests import Request;
 from google.oauth2.credentials import Credentials;
@@ -8,6 +11,7 @@ from google_auth_oauthlib.flow import InstalledAppFlow;
 from holidays import country_holidays
 
 from datetime import datetime,date,timedelta; 
+import time
 import os.path;
 import requests;
 import json;
@@ -66,7 +70,7 @@ def holidays_Calendar():
     full_holiday_set['reconstructed_date']=reconstructed_date;
     return full_holiday_set;
 
-def Holiday_selector():
+def holiday_aplet():
     close_holiday=[];
     close_holiday_date=[];
     _today_=str(datetime.today())[5:][:5];
@@ -113,14 +117,21 @@ def Holiday_selector():
     return upcommingHolidays;
      
 
-print(Holiday_selector());    
+#print(Holiday_selector());    
 
 
 
+print(holiday_aplet());
 
 
+#from seleniumbase import Driver
+#import time
 
-
+driver = Driver(uc=True)
+goooggo=driver.get('https://www.google.com');
+print(goooggo);
+time.sleep(6)
+driver.quit()
 
 
 
