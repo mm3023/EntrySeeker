@@ -1,4 +1,5 @@
 from __future__ import print_function;
+import seleniumbase
 from seleniumbase import Driver
 import time
 
